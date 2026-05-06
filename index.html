@@ -1,79 +1,353 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Rental</title>
 
-  </head>
-  <body>
+  <!-- Font Awesome to‘g‘rilangan -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <div class="container-1">
-        <nav>
-            <div class="nav-left">
-                <i class="fa-solid fa-car-rear"></i>
-                <a href="#">Car Rental</a>
-            </div>
-            <div class="nav-middle">
-                <a href="#">Home</a>
-                <a href="#">Vehicles</a>
-                <a href="#">Details</a>
-                <a href="#">About US</a>
-                <a href="#">Contact US</a>
-            </div>
-            <div class="nav-right">
-                <i class="fa-solid fa-phone"></i>
-                <a href="#">Need help? <br> +99899-123-45-67</a>
-            </div>
-        </nav>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="card.css" />
+</head>
 
-        <div class="experience">
-            <div class="experience-left">
-                <h1>Experience the road like never before</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque nesciunt obcaecati facere nisi dolorum iusto quia dolor debitis error?</p>
-                <button>View all cars</button>aiop*
-            </div>
-            <div class="experience-right">
-                <h3>Book your car</h3>
-                <select name="" id="">
-                    <option value="Car type">Car type</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Mercedes">Mercedes</option>
-                    <option value="Chevrolet">Chevrolet</option>
-                    <option value="Ferrari">Ferrari</option>
-                </select>
-
-                
-            </div>
-        </div>
+<body>
+  <nav>
+    <div class="nav-left">
+      <i class="fa-solid fa-car-rear"></i>
+      <a href="#">Car Rental</a>
     </div>
+
+    <div class="nav-middle">
+      <a href="#">Home</a>
+      <a href="#">Vehicles</a>
+      <a href="#">Details</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="nav-right">
+      <i class="fa-solid fa-phone"></i>
+      <a href="#">Need help?<br />+998 99 123 45 67</a>
+    </div>
+  </nav>
+
+  <div class="experience">
+    <div class="experience-left">
+      <h1>Experience the road like never before</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+        doloremque nesciunt obcaecati facere nisi dolorum.
+      </p>
+      <button>View all cars</button>
+    </div>
+
+    <div class="experience-right">
+      <h3 class="form-title">Book your car</h3>
+
+      <select class="form-select">
+        <option>Car type</option>
+        <option>BMW</option>
+        <option>Mercedes</option>
+        <option>Chevrolet</option>
+        <option>Ferrari</option>
+      </select>
+
+      <select class="form-select">
+        <option>Place of rental</option>
+        <option>Tashkent</option>
+        <option>Samarkand</option>
+      </select>
+
+      <select class="form-select">
+        <option>Place of return</option>
+        <option>Tashkent</option>
+        <option>Samarkand</option>
+      </select>
+
+      <div class="date-box">
+        <input type="date" class="form-input" />
+        <i class="fa-regular fa-calendar"></i>
+      </div>
+
+      <div class="date-box">
+        <input type="date" class="form-input" />
+        <i class="fa-regular fa-calendar"></i>
+      </div>
+
+      <button class="form-btn">Book now</button>
+    </div>
+  </div>
+
   <div class="container-2">
-        <div class="box">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>Availability</h3>
-            <p>Lorem ipsum dolor sit, amet wa adipisicing elit. Sunt, rerum.</p>
-
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>Availability</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, rerum.</p>
-            
-        </div>
-        <div class="bo
-  x">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>Availability</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, rerum.</p>
-            
-        </div>
+    <div class="box">
+      <i class="fa-solid fa-location-dot"></i>
+      <h3>Avaliybiti</h3>
+      <p>
+        Diam tincidunt tincidunt erat at semper fermentum. Id ultricies quis
+      </p>
     </div>
 
+    <div class="box">
+      <i class="fa-solid fa-car"></i>
+      <h3>Svings</h3>
+      <p>
+        Pretium convallis id diam sed commodo vestibulum lobortis volutpat
+      </p>
+    </div>
 
+    <div class="box">
+      <i class="fa-solid fa-wallet"></i>
+      <h3>Confort</h3>
+      <p>
+        Gravida auctor fermentum morbi vulputate ac egestas orcietium
+        convallis
+      </p>
+    </div>
+  </div>
 
+  <div class="container-3">
+    <div class="pading">
+      <img src="/2664a4b5f8dbe170061a4fef93e0b437b51d2804 (3).png" alt="" />
+    </div>
+    <div>
+      <ul class="ul">
+        <li>
+          <span class="span-1">1</span>
+          <h3>Erat at semper</h3>
+          Non amet fermentum est in enim at sit ullamcorper. Sit elementum
+          rhoncus nullam feugiat. Risus sem fermentum
+        </li>
+        <li>
+          <span class="span-1">2</span>
+          <h3>Urna nec vivamus risus duis arcu</h3>
+          Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor
+          tristique et gravida. Quis nunc interdum gravida ullamcorper
+        </li>
+        <li>
+          <span class="span-1">3</span>
+          <h3>Lobortis euismod imperdiet tempus</h3>
+          Viverra scelerisque mauris et nullam molestie et. Augue adipiscing
+          praesent nisl cras nunc luctus viverra nisi
+        </li>
+        <li>
+          <span class="span-1">4</span>
+          <h3>Cras nulla aliquet nam eleifend amet et</h3>
+          Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor
+          tristique et gravida. Quis nunc interdum gravida ullamcorper sed
+          integer. Quisque eleifend tincidunt vulputate libero
+        </li>
+      </ul>
+    </div>
+  </div>
 
+  <div class="container-4">
+    <h1>
+      Choose the car that <br />
+      suits you
+    </h1>
 
-  </body>
+    <div class="top">
+      <h2>Choose the car that suits you</h2>
+      <span>View All -&gt;</span>
+    </div>
+
+    <div class="choose">
+      <div class="cards">
+
+        <div class="card">
+          <img src="./rasmlar/4ad375b5d3dc2295340aaa98a651d4d19e2c0217.png" alt="rasm yo'q" />
+          <div class="card-middle">
+            <div class="card-middle-left">
+              <p>Mercedes</p>
+              <small>Sedan</small>
+            </div>
+            <div class="card-middle-right">
+              <p>$25</p>
+              <small>per day</small>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <i class="fa-brands fa-whmcs"></i>
+              <small>Automat</small>
+            </div>
+            <div class="card-bottom-middle">
+              <i class="fa-solid fa-gas-pump"></i>
+              <small>PB 95</small>
+            </div>
+            <div class="card-bottom-right">
+              <i class="fa-solid fa-snowflake"></i>
+              <small>Air Conditioner</small>
+            </div>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <img src="./rasmlar/4ad375b5d3dc2295340aaa98a651d4d19e2c0217.png" alt="rasm yo'q" />
+          <div class="card-middle">
+            <div class="card-middle-left">
+              <p>Mercedes</p>
+              <small>Sedan</small>
+            </div>
+            <div class="card-middle-right">
+              <p>$25</p>
+              <small>per day</small>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <i class="fa-brands fa-whmcs"></i>
+              <small>Automat</small>
+            </div>
+            <div class="card-bottom-middle">
+              <i class="fa-solid fa-gas-pump"></i>
+              <small>PB 95</small>
+            </div>
+            <div class="card-bottom-right">
+              <i class="fa-solid fa-snowflake"></i>
+              <small>Air Conditioner</small>
+            </div>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <img src="./rasmlar/4ad375b5d3dc2295340aaa98a651d4d19e2c0217.png" alt="rasm yo'q" />
+          <div class="card-middle">
+            <div class="card-middle-left">
+              <p>Mercedes</p>
+              <small>Sedan</small>
+            </div>
+            <div class="card-middle-right">
+              <p>$25</p>
+              <small>per day</small>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <i class="fa-brands fa-whmcs"></i>
+              <small>Automat</small>
+            </div>
+            <div class="card-bottom-middle">
+              <i class="fa-solid fa-gas-pump"></i>
+              <small>PB 95</small>
+            </div>
+            <div class="card-bottom-right">
+              <i class="fa-solid fa-snowflake"></i>
+              <small>Air Conditioner</small>
+            </div>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <img src="./rasmlar/c62a13f536f3c21560e62cdf1659d54e9fea3b1a.png" alt="rasm yo'q" />
+          <div class="card-middle">
+            <div class="card-middle-left">
+              <p>Mercedes</p>
+              <small>Sedan</small>
+            </div>
+            <div class="card-middle-right">
+              <p>$25</p>
+              <small>per day</small>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <i class="fa-brands fa-whmcs"></i>
+              <small>Automat</small>
+            </div>
+            <div class="card-bottom-middle">
+              <i class="fa-solid fa-gas-pump"></i>
+              <small>PB 95</small>
+            </div>
+            <div class="card-bottom-right">
+              <i class="fa-solid fa-snowflake"></i>
+              <small>Air Conditioner</small>
+            </div>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <img src="./rasmlar/d58b4438f2597ad6e8a4905562582b7c3add48cd.png" alt="rasm yo'q" />
+          <div class="card-middle">
+            <div class="card-middle-left">
+              <p>Mercedes</p>
+              <small>Sedan</small>
+            </div>
+            <div class="card-middle-right">
+              <p>$25</p>
+              <small>per day</small>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <i class="fa-brands fa-whmcs"></i>
+              <small>Automat</small>
+            </div>
+            <div class="card-bottom-middle">
+              <i class="fa-solid fa-gas-pump"></i>
+              <small>PB 95</small>
+            </div>
+            <div class="card-bottom-right">
+              <i class="fa-solid fa-snowflake"></i>
+              <small>Air Conditioner</small>
+            </div>
+          </div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <img src="./rasmlar/da1058c96659e705b2c338cfdbbc70843323a16d.png" alt="rasm yo'q" />
+          <div class="card-middle">
+            <div class="card-middle-left">
+              <p>Mercedes</p>
+              <small>Sedan</small>
+            </div>
+            <div class="card-middle-right">
+              <p>$25</p>
+              <small>per day</small>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <i class="fa-brands fa-whmcs"></i>
+              <small>Automat</small>
+            </div>
+            <div class="card-bottom-middle">
+              <i class="fa-solid fa-gas-pump"></i>
+              <small>PB 95</small>
+            </div>
+            <div class="card-bottom-right">
+              <i class="fa-solid fa-snowflake"></i>
+              <small>Air Conditioner</small>
+            </div>
+          </div>
+          <button>View Details</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-5">
+    <div class="navbar-2">
+      <div class="box-3">
+        <i class="fa-solid fa-car-rear"></i>
+
+      </div>
+      <div class="box-3">
+        <i class="fa-jelly-fill fa-regular fa-heart"></i>
+      </div>
+      <div class="box-3"></div>
+      <div class="box-3"></div>
+    </div>
+  </div>
+</body>
 </html>
