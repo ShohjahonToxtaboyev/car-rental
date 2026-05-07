@@ -521,17 +521,28 @@ nav .nav-middle {
     padding: 0 20px;
   }
 
+
+}
+
+  
+
   .container-5 {
     padding: 0 20px;
+  
+
   }
 
   .navbar-2 {
     height: 300px;
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+   
     
   }
-}
-.box-3{
+  .box-3{
   align-items: center;
-  display: flex;
   
-}
+ }
+
