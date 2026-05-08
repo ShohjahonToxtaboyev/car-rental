@@ -527,10 +527,9 @@ nav .nav-middle {
   align-items: center;
   
  }
- .navbar-2{
-  align-items: center;
+
   
- }
+
  .container-5 {
   max-width: 1440px;
   width: 100%;
@@ -544,11 +543,12 @@ nav .nav-middle {
   margin: 0 auto;
 }
 
-.navbar-3 h1{
+.navbar-3 {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  
+  height: 100px;
 }
 .navbar-3 small{
   display: flex;
