@@ -552,5 +552,6 @@ nav .nav-middle {
 }
 .navbar-3 small{
   display: flex;
+  justify-content: space-around;
 }
 
