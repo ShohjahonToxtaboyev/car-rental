@@ -431,21 +431,8 @@ nav .nav-middle {
 }
 
 /* ========== CONTAINER 5 ========== */
-.container-5 {
-  max-width: 1440px;
-  width: 100%;
-  margin: 60px auto;
-  padding: 0 72px;
-}
 
-.navbar-2 {
-  width: 100%;
-  max-width: 1296px;
-  height: 486px;
-  border-radius: 20px;
-  background-color: #5937e0;
-  margin: 0 auto;
-}
+
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media screen and (max-width: 1024px) {
@@ -525,12 +512,7 @@ nav .nav-middle {
 }
 
   
-
-  .container-5 {
-    padding: 0 20px;
   
-
-  }
 
   .navbar-2 {
     height: 300px;
@@ -549,4 +531,26 @@ nav .nav-middle {
   align-items: center;
   
  }
+ .container-5 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 0 72px;
+    width: 100%;
+  max-width: 1296px;
+  height: 486px;
+  border-radius: 20px;
+  background-color: #5937e0;
+  margin: 0 auto;
+}
+
+.navbar-3 h1{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.navbar-3 small{
+  display: flex;
+}
 
