@@ -542,7 +542,6 @@ nav .nav-middle {
   background-color: #5937e0;
   margin: 0 auto;
 }
-
 .navbar-3 {
   align-items: center;
   display: flex;
@@ -560,7 +559,6 @@ nav .nav-middle {
   background-color: #ddd;
   border-radius: 10px;
   padding: 10px;
- 
 }
 .box-3 i {
   font-size: 45px;
@@ -579,15 +577,10 @@ nav .nav-middle {
   margin: auto;
   justify-content: space-around;
   align-items: center;
-  
 }
 .navbar-4 img {
   width: 267px;
   height: 540px;
-  
-
-  
-
 }
 .iphone-content{
   width:  536px;
