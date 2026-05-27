@@ -258,7 +258,6 @@ nav .nav-middle {
   gap: 60px;
   padding: 0 20px;
   flex-wrap: wrap;
-  
 }
 
 .pading {
@@ -281,7 +280,6 @@ nav .nav-middle {
   display: flex;
   flex-direction: column;
   gap: 25px;
-
 }
 
 .ul li {
@@ -432,8 +430,6 @@ nav .nav-middle {
 
 /* ========== CONTAINER 5 ========== */
 
-
-
 /* ========== RESPONSIVE DESIGN ========== */
 @media screen and (max-width: 1024px) {
   .experience {
@@ -507,35 +503,24 @@ nav .nav-middle {
   .container-4 {
     padding: 0 20px;
   }
-
-
 }
 
-  
-  
-
-  .navbar-2 {
-    height: 300px;
-    display: flex;
+.navbar-2 {
+  height: 300px;
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  
-   
-    
-  }
-  .box-3{
+}
+.box-3 {
   align-items: center;
-  
- }
+}
 
-  
-
- .container-5 {
+.container-5 {
   max-width: 1440px;
   width: 100%;
   margin: 60px auto;
   padding: 0 72px;
-    width: 100%;
+  width: 100%;
   max-width: 1296px;
   height: 486px;
   border-radius: 20px;
@@ -549,11 +534,11 @@ nav .nav-middle {
   justify-content: space-around;
   height: 100px;
 }
-.navbar-3 small{
+.navbar-3 small {
   display: flex;
   justify-content: space-around;
 }
-.box-3  {
+.box-3 {
   display: flex;
   gap: 20px;
   background-color: #ddd;
@@ -562,12 +547,12 @@ nav .nav-middle {
 }
 .box-3 i {
   font-size: 45px;
-  background-color: #FF9E0C;
+  background-color: #ff9e0c;
   color: #ddd;
   border-radius: 10px;
   padding: 10px;
 }
-.contayner-6{
+.contayner-6 {
   width: 1440px;
   height: 630px;
   padding: 45px 72px 45px 158px;
@@ -581,25 +566,32 @@ nav .nav-middle {
 .navbar-4 img {
   width: 267px;
   height: 540px;
+  border: 1px solid green;
 }
-.iphone-content{
-  width:  536px;
+.iphone-content {
+  width: 536px;
   height: 368px;
   border: 1px solid red;
 }
-.img-1 img{
+
+.img-1 img {
   width: 26px;
   height: 31px;
- 
+  
 }
-button{
+button {
   background-color: #222;
-  color:#f0f0f0;
-
+  color: #f0f0f0;
 }
-. img-2{
-margin-top: px;
+.navbar-4 {
+  display: flex;
+  border: 1px solid red;
 }
-
-
-
+.navbar-4 .img1 {
+  position: relative;
+  left: 100px;
+  top: 40px;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 20px;
+}
