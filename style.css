@@ -6,7 +6,7 @@
   font-family: Arial, sans-serif;
 }
 
-/* ========== NAVBAR ========== */
+
 nav {
   max-width: 1440px;
   width: 100%;
@@ -60,7 +60,7 @@ nav .nav-middle {
   justify-content: center;
 }
 
-/* ========== EXPERIENCE SECTION ========== */
+
 .experience {
   max-width: 1296px;
   width: 100%;
@@ -200,7 +200,7 @@ nav .nav-middle {
   transform: scale(1.02);
 }
 
-/* ========== CONTAINER 2 (ICONS BOXES) ========== */
+
 .container-2 {
   max-width: 1296px;
   width: 100%;
@@ -247,7 +247,7 @@ nav .nav-middle {
   line-height: 1.5;
 }
 
-/* ========== CONTAINER 3 (IMAGE + LIST) ========== */
+
 .container-3 {
   max-width: 1296px;
   width: 100%;
@@ -308,7 +308,7 @@ nav .nav-middle {
   min-width: 30px;
 }
 
-/* ========== CONTAINER 4 (CARDS) ========== */
+
 .container-4 {
   max-width: 1440px;
   width: 100%;
@@ -428,9 +428,7 @@ nav .nav-middle {
   transform: scale(1.02);
 }
 
-/* ========== CONTAINER 5 ========== */
 
-/* ========== RESPONSIVE DESIGN ========== */
 @media screen and (max-width: 1024px) {
   .experience {
     flex-direction: column;
@@ -615,5 +613,23 @@ nav .nav-middle {
   top: -20px;
   z-index: 2;
 }
+/* ================================= */
+.container-7{
+  width: 1440px;
+  height: 469px;
+  padding: 60px 72px 40px 72px;
+  color: #f0f0f0;
+  border: 1px solid red;
 
+  
+}
+.car-1{
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;
+  width: 300px;
+  margin: 0 auto;
 
+}

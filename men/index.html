@@ -1,14 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Car Rental | Avtomobil ijarasi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fc;
+            color: #1e2a3e;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        /* asosiy grid: 2 ustun (chapda contact + matn, o'ngda linklar + app) */
+        .rental-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 3rem 2.5rem;
+        }
+
+        /* chap ustun */
+        .info-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.3px;
+            color: #0b2b3b;
+            border-left: 5px solid #f39c12;
+            padding-left: 1rem;
+        }
+
+        .contact-details {
+            margin: 1.5rem 0;
+            background: #f9fafb;
+            padding: 1.2rem 1.5rem;
+            border-radius: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            word-break: break-word;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-item strong {
+            min-width: 60px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .contact-item span, .contact-item a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-item a:hover {
+            color: #f39c12;
+        }
+
+        .desc-text {
+            background: #fff6e8;
+            padding: 1.2rem 1.5rem;
+            border-radius: 20px;
+            font-style: normal;
+            font-size: 1rem;
+            color: #2c3e50;
+            margin-top: 1rem;
+            border: 1px solid #ffe0b5;
+        }
+
+        .desc-text p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* o'ng ustun */
+        .links-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .useful-links h3, .download-app h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: #0b2b3b;
+            position: relative;
+            display: inline-block;
+        }
+
+        .useful-links h3:after, .download-app h3:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: #f39c12;
+            border-radius: 4px;
+        }
+
+        .links-list {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        .links-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .links-list a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .links-list a:hover {
+            color: #f39c12;
+            transform: translateX(5px);
+        }
+
+        .app-badge {
+            background: #1e2a3e;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 20px;
+            border-radius: 40px;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.1s;
+            margin-top: 0.5rem;
+        }
+
+        .app-badge:hover {
+            background: #f39c12;
+            color: #1e2a3e;
+            transform: scale(1.02);
+        }
+
+        .app-badge small {
+            font-size: 0.7rem;
+            font-weight: normal;
+            opacity: 0.8;
+            display: block;
+        }
+
+        .app-badge .store-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+        }
+
+        /* footer */
+        .footer {
+            background: #f1f5f9;
+            padding: 1.2rem 2.5rem;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #4a5568;
+        }
+
+        .footer a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* responsive */
+        @media (max-width: 780px) {
+            .rental-grid {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+                padding: 2rem 1.5rem;
+            }
+
+            .info-section h2 {
+                font-size: 1.6rem;
+            }
+
+            .contact-item {
+                flex-wrap: wrap;
+                gap: 0.3rem;
+            }
+
+            .contact-item strong {
+                min-width: 55px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            .rental-grid {
+                padding: 1.5rem;
+            }
+            .app-badge {
+                padding: 8px 16px;
+            }
+        }
+
+        /* ixtiyoriy: icon emoji */
+        .icon-em {
+            font-size: 1.1rem;
+            width: 24px;
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+<div class="container">
+    <div class="rental-grid">
+        <!-- CHAP QISM: manzil, email, tel va qo'shimcha matn -->
+        <div class="info-section">
+            <h2>Car Rental</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <strong>📍 Address</strong>
+                    <span>Oxford Ave. Cary, NC 27511</span>
+                </div>
+                <div class="contact-item">
+                    <strong>📧 Email</strong>
+                    <a href="mailto:nwiger@yahoo.com">nwiger@yahoo.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>📞 Phone</strong>
+                    <a href="tel:+5375476401">+537 547-6401</a>
+                </div>
+            </div>
 
+            <!-- "Faucibus faucibus pellentesque dictum turpis..." matni -->
+            <div class="desc-text">
+                <p>🍃 Faucibus faucibus pellentesque dictum turpis.<br>
+                Id pellentesque turpis massa a id iaculis lorem t...</p>
+            </div>
+        </div>
 
-    <script src="./main.js"></script>
+        <!-- O'NG QISM: foydali linklar + ilova yuklab olish -->
+        <div class="links-section">
+            <div class="useful-links">
+                <h3>Useful links</h3>
+                <ul class="links-list">
+                    <li><a href="#">🔹 About us</a></li>
+                    <li><a href="#">🔹 Contact us</a></li>
+                    <li><a href="#">🔹 Gallery</a></li>
+                    <li><a href="#">🔹 Blog</a></li>
+                    <li><a href="#">🔹 F.A.Q</a></li>
+                </ul>
+            </div>
+
+            <div class="download-app">
+                <h3>Download App</h3>
+                <a href="#" class="app-badge">
+                    <span>🍏</span>
+                    <div>
+                        <small>Download on the</small>
+                        <div class="store-name">App Store</div>
+                    </div>
+                </a>
+                <!-- Agar Google Play ham kerak bo'lsa qo'shimcha, lekin berilgan ma'lumotda faqat App Store mavjud -->
+                <p style="font-size: 0.75rem; margin-top: 12px; color:#5a6874;">📱 Get the best rental experience</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER: copyright -->
+    <div class="footer">
+        © Copyright Car Rental 2024. Design by <a href="#">Figma.guru</a>
+    </div>
+</div>
 </body>
 </html>
