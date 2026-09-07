@@ -614,22 +614,161 @@ nav .nav-middle {
   z-index: 2;
 }
 /* ================================= */
-.container-7{
-  width: 1440px;
-  height: 469px;
-  padding: 60px 72px 40px 72px;
-  color: #f0f0f0;
-  border: 1px solid red;
 
-  
+.contayner-7 {
+  max-width: 1296px;
+  width: 100%;
+  margin: 80px auto 20px auto;
+  padding: 0 20px;
 }
-.car-1{
-  text-align: center;
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  height: 100vh;
-  width: 300px;
-  margin: 0 auto;
 
+.main-1 {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;  
+}
+
+.car-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.car-1 i {
+  font-size: 28px;
+  color: #000;
+}
+
+.car-1 p {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000;
+}
+
+.pading-2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pading-2 i {
+  font-size: 18px;
+  color: #ff9e0c; 
+  background-color: rgba(255, 158, 12, 0.1); 
+  padding: 12px;
+  border-radius: 50%; 
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pading-2 small {
+  color: #777;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.pading-2 p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* 3. margin-1 */
+.margin-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+/* 4. navbar-6 */
+.navbar-6 {
+  max-width: 300px;
+}
+
+.footer-text {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* 10. margin-2 */
+.margin-2 {
+  display: flex;
+  gap: 12px;
+}
+
+.margin-2 a {
+  color: #e0e0e0;
+  background-color: #000000;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* 6. card-4 */
+.card-4 h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-4 ul {
+  list-style: none;
+}
+
+.card-4 ul li {
+  margin-bottom: 12px;
+}
+
+.card-4 ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.card-4 ul li a:hover {
+  color: #5937e0;
+}
+
+
+.box-6 h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.box-6 .app-btn {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box-6 .app-btn img {
+  width: 135px;
+  height: auto;
+  display: block;
+}
+
+/* 8. navbar-7 */
+.navbar-7 {
+  text-align: center;
+  padding-top: 20px;
+  color: #999;
+  font-size: 13px;
+  border-top: 1px solid #eee;
 }
