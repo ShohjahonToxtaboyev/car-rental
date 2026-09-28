@@ -24,6 +24,7 @@ modal.onclick = function (e) {
   }
 };
 
+
 form.onsubmit = function (e) {
   e.preventDefault();
 
