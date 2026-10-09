@@ -29,7 +29,12 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.15) 40%, rgba(0,0,0,.5));
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(0, 0, 0, 0.5)
+  );
 }
 
 .hero a {
@@ -580,6 +585,3 @@ a {
     flex-direction: column;
   }
 }
-
-
-

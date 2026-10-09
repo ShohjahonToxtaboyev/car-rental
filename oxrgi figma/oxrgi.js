@@ -34,22 +34,24 @@ form.onsubmit = function (e) {
   modal.style.display = "none";
 };
 
-var rail = document.getElementById('rail');
+var rail = document.getElementById("rail");
 var cardGap = 22;
-function cardWidth(){
-  var card = rail.querySelector('.car-card');
+function cardWidth() {
+  var card = rail.querySelector(".car-card");
   return card ? card.offsetWidth + cardGap : 400;
 }
-document.getElementById('nextBtn').addEventListener('click', function(){
-  rail.scrollBy({ left: cardWidth(), behavior: 'smooth' });
+document.getElementById("nextBtn").addEventListener("click", function () {
+  rail.scrollBy({ left: cardWidth(), behavior: "smooth" });
 });
-document.getElementById('prevBtn').addEventListener('click', function(){
-  rail.scrollBy({ left: -cardWidth(), behavior: 'smooth' });
+document.getElementById("prevBtn").addEventListener("click", function () {
+  rail.scrollBy({ left: -cardWidth(), behavior: "smooth" });
 });
 
-document.querySelectorAll('.tabs button').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    document.querySelectorAll('.tabs button').forEach(function(b){ b.classList.remove('active'); });
-    btn.classList.add('active');
+document.querySelectorAll(".tabs button").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll(".tabs button").forEach(function (b) {
+      b.classList.remove("active");
+    });
+    btn.classList.add("active");
   });
 });

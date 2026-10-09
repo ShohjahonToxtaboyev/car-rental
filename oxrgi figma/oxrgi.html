@@ -1,248 +1,338 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CarHut</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="./oxrgi.css">
-</head>
-<body>
-
-  <div class="hero">
-
-    <div class="header">
-
-      <div class="left">
-        <a href="#" class="logo"><i class="fa-solid fa-car-rear"></i> CarHut</a>
-        <a href="#" class="phone"><i class="fa-solid fa-mobile-screen"></i> +75 123 456 789</a>
-      </div>
-
-      <div class="menu">
-        <button class="menu-btn">Home <i class="fa-solid fa-angle-down"></i></button>
-        <button class="menu-btn">Listings <i class="fa-solid fa-angle-down"></i></button>
-        <button class="menu-btn">Blog <i class="fa-solid fa-angle-down"></i></button>
-        <button class="menu-btn">Pages <i class="fa-solid fa-angle-down"></i></button>
-
-        <a href="#" class="menu-link">About</a>
-        <a href="#" class="menu-link">Contact</a>
-
-        <a href="#" class="menu-link login" id="signin-link"><i class="fa-solid fa-user"></i> Sign In</a>
-      </div>
-
-      <a href="#" class="submit-btn" id="submit-btn">Submit Listing</a>
-    </div>
-
-    <div class="car-info">
-      <p class="price">$165,000</p>
-      <h1>Ranger Black <br>2021</h1>
-    </div>
-
-    <div class="dots">
-      <span></span><span></span><span></span>
-    </div>
-
-    <div class="specs">
-      <div class="spec">
-        <i class="fa-solid fa-gas-pump"></i>
-        <p class="big">Petrol</p>
-        <p class="small">Fuel Type</p>
-      </div>
-
-      <div class="spec">
-        <i class="fa-solid fa-gauge-high"></i>
-        <p class="big">250 Miles</p>
-        <p class="small">Mileage</p>
-      </div>
-
-      <div class="spec">
-        <i class="fa-solid fa-gears"></i>
-        <p class="big">Manual</p>
-        <p class="small">Transmission</p>
-      </div>
-
-      <div class="spec">
-        <i class="fa-regular fa-calendar-days"></i>
-        <p class="big">2021</p>
-        <p class="small">Year</p>
-      </div>
-
-      <a href="#" class="learn-btn">Learn More ↗</a>
-    </div>
-
-  </div>
-
-  <section class="vehicles">
-    <div class="section-head">
-      <h2>Explore All Vehicles</h2>
-      <a href="#" class="view-all">View All →</a>
-    </div>
-    <div class="tabs">
-      <button class="active" data-filter="stock">In Stock</button>
-      <button data-filter="new">New Cars</button>
-      <button data-filter="used">Used Cars</button>
-    </div>
-
-    <div class="rail-wrap">
-      <div class="rail" id="rail">
-
-        <article class="car-card">
-          <div class="car-photo" style="background-image:url('./acaf2e2b326396346b68dcac4025be7e9a24df21.jpg')">
-            <button class="save-btn" aria-label="Save"><i class="fa-regular fa-bookmark"></i></button>
-          </div>
-          <div class="car-body">
-            <h3>T-Cross — 2023</h3>
-            <p class="car-sub">4.0 D5 PowerPulse Momentum 5dr AWD...</p>
-            <div class="spec-row">
-              <span><i class="fa-solid fa-location-dot"></i> 15 Miles</span>
-              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
-              <span><i class="fa-solid fa-gears"></i> CVT</span>
-            </div>
-            <div class="car-footer">
-              <span class="car-price">$15,000</span>
-              <a href="#" class="details-link">View Details →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="car-card">
-          <div class="car-photo" style="background-image:url('./ee37027a3df8daa44f995c6898214c471feafc51.jpg')">
-            <button class="save-btn" aria-label="Save"><i class="fa-regular fa-bookmark"></i></button>
-          </div>
-          <div class="car-body">
-            <h3>C-Class — 2023</h3>
-            <p class="car-sub">4.0 D5 PowerPulse Momentum 5dr AWD...</p>
-            <div class="spec-row">
-              <span><i class="fa-solid fa-location-dot"></i> 50 Miles</span>
-              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
-              <span><i class="fa-solid fa-gears"></i> Automatic</span>
-            </div>
-            <div class="car-footer">
-              <span class="car-price">$150,000</span>
-              <a href="#" class="details-link">View Details →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="car-card">
-          <div class="car-photo" style="background-image:url('./1e7a6a561706eacf740bda6fbbff670c191a65bf.jpg')">
-            <span class="pbadge">Great Price</span>
-            <button class="save-btn" aria-label="Save"><i class="fa-regular fa-bookmark"></i></button>
-          </div>
-          <div class="car-body">
-            <h3>Bentayga — 2023</h3>
-            <p class="car-sub">4.0 V8 Mulliner 5dr Automatic AWD...</p>
-            <div class="spec-row">
-              <span><i class="fa-solid fa-location-dot"></i> 30 Miles</span>
-              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
-              <span><i class="fa-solid fa-gears"></i> Automatic</span>
-            </div>
-            <div class="car-footer">
-              <span class="car-price">$210,000</span>
-              <a href="#" class="details-link">View Details →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="car-card">
-          <div class="car-photo" style="background-image:url('./1.jpg')">
-            <button class="save-btn" aria-label="Save"><i class="fa-regular fa-bookmark"></i></button>
-          </div>
-          <div class="car-body">
-            <h3>Model X — 2024</h3>
-            <p class="car-sub">Long Range Plaid AWD 5dr Automatic...</p>
-            <div class="spec-row">
-              <span><i class="fa-solid fa-location-dot"></i> 5 Miles</span>
-              <span><i class="fa-solid fa-bolt"></i> Electric</span>
-              <span><i class="fa-solid fa-gears"></i> Automatic</span>
-            </div>
-            <div class="car-footer">
-              <span class="car-price">$89,000</span>
-              <a href="#" class="details-link">View Details →</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="rail-nav">
-        <button id="prevBtn" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
-        <button id="nextBtn" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
-      </div>
-    </div>
-  </section>
-
-  <section class="why">
-    <div class="why-panel">
-      <h2>Why Choose Us?</h2>
-      <div class="why-grid">
-        <div class="why-item">
-          <i class="fa-solid fa-file-invoice-dollar why-icon"></i>
-          <h4>Special Financing Offers</h4>
-          <p>Our stress-free finance department that can find financial solutions to save you money.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>CarHut</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./oxrgi.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="header">
+        <div class="left">
+          <a href="#" class="logo"
+            ><i class="fa-solid fa-car-rear"></i> CarHut</a
+          >
+          <a href="#" class="phone"
+            ><i class="fa-solid fa-mobile-screen"></i> +75 123 456 789</a
+          >
         </div>
-        <div class="why-item">
-          <i class="fa-solid fa-shield-halved why-icon"></i>
-          <h4>Trusted Car Dealership</h4>
-          <p>Our stress-free finance department that can find financial solutions to save you money.</p>
+
+        <div class="menu">
+          <button class="menu-btn">
+            Home <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <button class="menu-btn">
+            Listings <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <button class="menu-btn">
+            Blog <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <button class="menu-btn">
+            Pages <i class="fa-solid fa-angle-down"></i>
+          </button>
+
+          <a href="#" class="menu-link">About</a>
+          <a href="#" class="menu-link">Contact</a>
+
+          <a href="#" class="menu-link login" id="signin-link"
+            ><i class="fa-solid fa-user"></i> Sign In</a
+          >
         </div>
-        <div class="why-item">
-          <i class="fa-solid fa-tags why-icon"></i>
-          <h4>Transparent Pricing</h4>
-          <p>Our stress-free finance department that can find financial solutions to save you money.</p>
+
+        <a href="#" class="submit-btn" id="submit-btn">Submit Listing</a>
+      </div>
+
+      <div class="car-info">
+        <p class="price">$165,000</p>
+        <h1>Ranger Black <br />2021</h1>
+      </div>
+
+      <div class="dots"><span></span><span></span><span></span></div>
+
+      <div class="specs">
+        <div class="spec">
+          <i class="fa-solid fa-gas-pump"></i>
+          <p class="big">Petrol</p>
+          <p class="small">Fuel Type</p>
         </div>
-        <div class="why-item">
-          <i class="fa-solid fa-screwdriver-wrench why-icon"></i>
-          <h4>Expert Car Service</h4>
-          <p>Our stress-free finance department that can find financial solutions to save you money.</p>
+
+        <div class="spec">
+          <i class="fa-solid fa-gauge-high"></i>
+          <p class="big">250 Miles</p>
+          <p class="small">Mileage</p>
         </div>
+
+        <div class="spec">
+          <i class="fa-solid fa-gears"></i>
+          <p class="big">Manual</p>
+          <p class="small">Transmission</p>
+        </div>
+
+        <div class="spec">
+          <i class="fa-regular fa-calendar-days"></i>
+          <p class="big">2021</p>
+          <p class="small">Year</p>
+        </div>
+
+        <a href="#" class="learn-btn">Learn More ↗</a>
       </div>
     </div>
-  </section>
 
-  <div class="modal" id="login-modal">
-    <div class="modal-box">
-      <button class="close-btn" id="close-btn">&times;</button>
+    <section class="vehicles">
+      <div class="section-head">
+        <h2>Explore All Vehicles</h2>
+        <a href="#" class="view-all">View All →</a>
+      </div>
+      <div class="tabs">
+        <button class="active" data-filter="stock">In Stock</button>
+        <button data-filter="new">New Cars</button>
+        <button data-filter="used">Used Cars</button>
+      </div>
 
-      <h2>Sign in</h2>
-      <p class="modal-text">Please sign in to submit your listing.</p>
+      <div class="rail-wrap">
+        <div class="rail" id="rail">
+          <article class="car-card">
+            <div
+              class="car-photo"
+              style="
+                background-image: url(&quot;./acaf2e2b326396346b68dcac4025be7e9a24df21.jpg&quot;);
+              "
+            >
+              <button class="save-btn" aria-label="Save">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="car-body">
+              <h3>T-Cross — 2023</h3>
+              <p class="car-sub">4.0 D5 PowerPulse Momentum 5dr AWD...</p>
+              <div class="spec-row">
+                <span><i class="fa-solid fa-location-dot"></i> 15 Miles</span>
+                <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                <span><i class="fa-solid fa-gears"></i> CVT</span>
+              </div>
+              <div class="car-footer">
+                <span class="car-price">$15,000</span>
+                <a href="#" class="details-link">View Details →</a>
+              </div>
+            </div>
+          </article>
 
-      <form id="login-form">
-        <input type="text" id="login-name" placeholder="Email or username" required>
-        <input type="password" id="login-password" placeholder="Password" required>
-        <button type="submit" class="login-btn">Sign In</button>
-      </form>
+          <article class="car-card">
+            <div
+              class="car-photo"
+              style="
+                background-image: url(&quot;./ee37027a3df8daa44f995c6898214c471feafc51.jpg&quot;);
+              "
+            >
+              <button class="save-btn" aria-label="Save">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="car-body">
+              <h3>C-Class — 2023</h3>
+              <p class="car-sub">4.0 D5 PowerPulse Momentum 5dr AWD...</p>
+              <div class="spec-row">
+                <span><i class="fa-solid fa-location-dot"></i> 50 Miles</span>
+                <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              </div>
+              <div class="car-footer">
+                <span class="car-price">$150,000</span>
+                <a href="#" class="details-link">View Details →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div
+              class="car-photo"
+              style="
+                background-image: url(&quot;./1e7a6a561706eacf740bda6fbbff670c191a65bf.jpg&quot;);
+              "
+            >
+              <span class="pbadge">Great Price</span>
+              <button class="save-btn" aria-label="Save">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="car-body">
+              <h3>Bentayga — 2023</h3>
+              <p class="car-sub">4.0 V8 Mulliner 5dr Automatic AWD...</p>
+              <div class="spec-row">
+                <span><i class="fa-solid fa-location-dot"></i> 30 Miles</span>
+                <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              </div>
+              <div class="car-footer">
+                <span class="car-price">$210,000</span>
+                <a href="#" class="details-link">View Details →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <div
+              class="car-photo"
+              style="background-image: url(&quot;./1.jpg&quot;)"
+            >
+              <button class="save-btn" aria-label="Save">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="car-body">
+              <h3>Model X — 2024</h3>
+              <p class="car-sub">Long Range Plaid AWD 5dr Automatic...</p>
+              <div class="spec-row">
+                <span><i class="fa-solid fa-location-dot"></i> 5 Miles</span>
+                <span><i class="fa-solid fa-bolt"></i> Electric</span>
+                <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              </div>
+              <div class="car-footer">
+                <span class="car-price">$89,000</span>
+                <a href="#" class="details-link">View Details →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="rail-nav">
+          <button id="prevBtn" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="nextBtn" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="why-panel">
+        <h2>Why Choose Us?</h2>
+        <div class="why-grid">
+          <div class="why-item">
+            <i class="fa-solid fa-file-invoice-dollar why-icon"></i>
+            <h4>Special Financing Offers</h4>
+            <p>
+              Our stress-free finance department that can find financial
+              solutions to save you money.
+            </p>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-shield-halved why-icon"></i>
+            <h4>Trusted Car Dealership</h4>
+            <p>
+              Our stress-free finance department that can find financial
+              solutions to save you money.
+            </p>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-tags why-icon"></i>
+            <h4>Transparent Pricing</h4>
+            <p>
+              Our stress-free finance department that can find financial
+              solutions to save you money.
+            </p>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-screwdriver-wrench why-icon"></i>
+            <h4>Expert Car Service</h4>
+            <p>
+              Our stress-free finance department that can find financial
+              solutions to save you money.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="login-modal">
+      <div class="modal-box">
+        <button class="close-btn" id="close-btn">&times;</button>
+
+        <h2>Sign in</h2>
+        <p class="modal-text">Please sign in to submit your listing.</p>
+
+        <form id="login-form">
+          <input
+            type="text"
+            id="login-name"
+            placeholder="Email or username"
+            required
+          />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" class="login-btn">Sign In</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <section class="types">
-  <div class="section-head">
-    <h2>Browse by Type</h2>
-    <a href="#" class="view-all">View All ↗</a>
-  </div>
+    <section class="types">
+      <div class="section-head">
+        <h2>Browse by Type</h2>
+        <a href="#" class="view-all">View All ↗</a>
+      </div>
 
-  <div class="type-row">
-    <a href="#" class="type-card" style="background-image:url('./2.jpg')">
-    </a>
-    <a href="#" class="type-card" style="background-image:url('./3.jpg')">
-      <span class="type-label"><i class="fa-solid fa-car-side"></i> Sedan</span>
-    </a>
-  </div>
+      <div class="type-row">
+        <a
+          href="#"
+          class="type-card"
+          style="background-image: url(&quot;./2.jpg&quot;)"
+        >
+        </a>
+        <a
+          href="#"
+          class="type-card"
+          style="background-image: url(&quot;./3.jpg&quot;)"
+        >
+          <span class="type-label"
+            ><i class="fa-solid fa-car-side"></i> Sedan</span
+          >
+        </a>
+      </div>
 
-  <div class="type-row">
-    <a href="#" class="type-card" style="background-image:url('./4.jpg')">
-      <span class="type-label"><i class="fa-solid fa-car"></i> Hatchback</span>
-    </a>
-    <a href="#" class="type-card" style="background-image:url('./5.jpg')">
-      <span class="type-label"> </i> Hybrid</span>
-    </a>
-    <a href="#" class="type-card" style="background-image:url('./6.jpg')">
-      <span class="type-label"><i class="fa-solid fa-car-rear"></i> Coupe</span>
-    </a>
-  </div>
-</section>
+      <div class="type-row">
+        <a
+          href="#"
+          class="type-card"
+          style="background-image: url(&quot;./4.jpg&quot;)"
+        >
+          <span class="type-label"
+            ><i class="fa-solid fa-car"></i> Hatchback</span
+          >
+        </a>
+        <a
+          href="#"
+          class="type-card"
+          style="background-image: url(&quot;./5.jpg&quot;)"
+        >
+          <span class="type-label"
+            ><i class="fa-solid fa-leaf"></i> Hybrid</span
+          >
+        </a>
+        <a
+          href="#"
+          class="type-card"
+          style="background-image: url(&quot;./6.jpg&quot;)"
+        >
+          <span class="type-label"
+            ><i class="fa-solid fa-car-rear"></i> Coupe</span
+          >
+        </a>
+      </div>
+    </section>
 
-<script src="./oxrgi.js"></script>
-</body>
+    <script src="./oxrgi.js"></script>
+  </body>
 </html>
-
-
