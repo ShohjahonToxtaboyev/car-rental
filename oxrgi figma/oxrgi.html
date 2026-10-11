@@ -2,52 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CarHut</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="./oxrgi.css" />
   </head>
   <body>
     <div class="hero">
       <div class="header">
         <div class="left">
-          <a href="#" class="logo"
-            ><i class="fa-solid fa-car-rear"></i> CarHut</a
-          >
-          <a href="#" class="phone"
-            ><i class="fa-solid fa-mobile-screen"></i> +75 123 456 789</a
-          >
+          <a href="#" class="logo"><i class="fa-solid fa-car-rear"></i> CarHut</a>
+          <a href="#" class="phone"><i class="fa-solid fa-mobile-screen"></i> +75 123 456 789</a>
         </div>
 
         <div class="menu">
-          <button class="menu-btn">
-            Home <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <button class="menu-btn">
-            Listings <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <button class="menu-btn">
-            Blog <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <button class="menu-btn">
-            Pages <i class="fa-solid fa-angle-down"></i>
-          </button>
+          <button class="menu-btn">Home <i class="fa-solid fa-angle-down"></i></button>
+          <button class="menu-btn">Listings <i class="fa-solid fa-angle-down"></i></button>
+          <button class="menu-btn">Blog <i class="fa-solid fa-angle-down"></i></button>
+          <button class="menu-btn">Pages <i class="fa-solid fa-angle-down"></i></button>
 
           <a href="#" class="menu-link">About</a>
           <a href="#" class="menu-link">Contact</a>
 
-          <a href="#" class="menu-link login" id="signin-link"
-            ><i class="fa-solid fa-user"></i> Sign In</a
-          >
+          <a href="#" class="menu-link login work" id="signin-link"><i class="fa-solid fa-user"></i> Sign In</a>
         </div>
 
-        <a href="#" class="submit-btn" id="submit-btn">Submit Listing</a>
+        <a href="#" class="submit-btn work" id="submit-btn">Submit Listing</a>
       </div>
 
       <div class="car-info">
@@ -91,24 +71,18 @@
         <h2>Explore All Vehicles</h2>
         <a href="#" class="view-all">View All →</a>
       </div>
+
       <div class="tabs">
-        <button class="active" data-filter="stock">In Stock</button>
-        <button data-filter="new">New Cars</button>
-        <button data-filter="used">Used Cars</button>
+        <button class="active">In Stock</button>
+        <button>New Cars</button>
+        <button>Used Cars</button>
       </div>
 
       <div class="rail-wrap">
         <div class="rail" id="rail">
-          <article class="car-card">
-            <div
-              class="car-photo"
-              style="
-                background-image: url(&quot;./acaf2e2b326396346b68dcac4025be7e9a24df21.jpg&quot;);
-              "
-            >
-              <button class="save-btn" aria-label="Save">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
+          <div class="car-card">
+            <div class="car-photo" style="background-image: url(./salom/1e7a6a561706eacf740bda6fbbff670c191a65bf.jpg)">
+              <button class="save-btn"><i class="fa-regular fa-bookmark"></i></button>
             </div>
             <div class="car-body">
               <h3>T-Cross — 2023</h3>
@@ -123,18 +97,11 @@
                 <a href="#" class="details-link">View Details →</a>
               </div>
             </div>
-          </article>
+          </div>
 
-          <article class="car-card">
-            <div
-              class="car-photo"
-              style="
-                background-image: url(&quot;./ee37027a3df8daa44f995c6898214c471feafc51.jpg&quot;);
-              "
-            >
-              <button class="save-btn" aria-label="Save">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
+          <div class="car-card">
+            <div class="car-photo" style="background-image: url(./salom/acaf2e2b326396346b68dcac4025be7e9a24df21.jpg)">
+              <button class="save-btn"><i class="fa-regular fa-bookmark"></i></button>
             </div>
             <div class="car-body">
               <h3>C-Class — 2023</h3>
@@ -149,19 +116,12 @@
                 <a href="#" class="details-link">View Details →</a>
               </div>
             </div>
-          </article>
+          </div>
 
-          <article class="car-card">
-            <div
-              class="car-photo"
-              style="
-                background-image: url(&quot;./1e7a6a561706eacf740bda6fbbff670c191a65bf.jpg&quot;);
-              "
-            >
+          <div class="car-card">
+            <div class="car-photo" style="background-image: url(./salom/ee37027a3df8daa44f995c6898214c471feafc51.jpg)">
               <span class="pbadge">Great Price</span>
-              <button class="save-btn" aria-label="Save">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
+              <button class="save-btn"><i class="fa-regular fa-bookmark"></i></button>
             </div>
             <div class="car-body">
               <h3>Bentayga — 2023</h3>
@@ -176,16 +136,11 @@
                 <a href="#" class="details-link">View Details →</a>
               </div>
             </div>
-          </article>
+          </div>
 
-          <article class="car-card">
-            <div
-              class="car-photo"
-              style="background-image: url(&quot;./1.jpg&quot;)"
-            >
-              <button class="save-btn" aria-label="Save">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
+          <div class="car-card">
+            <div class="car-photo" style="background-image: url(./salom/1.jpg)">
+              <button class="save-btn"><i class="fa-regular fa-bookmark"></i></button>
             </div>
             <div class="car-body">
               <h3>Model X — 2024</h3>
@@ -200,16 +155,12 @@
                 <a href="#" class="details-link">View Details →</a>
               </div>
             </div>
-          </article>
+          </div>
         </div>
 
         <div class="rail-nav">
-          <button id="prevBtn" aria-label="Previous">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button id="nextBtn" aria-label="Next">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
+          <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
     </section>
@@ -221,34 +172,22 @@
           <div class="why-item">
             <i class="fa-solid fa-file-invoice-dollar why-icon"></i>
             <h4>Special Financing Offers</h4>
-            <p>
-              Our stress-free finance department that can find financial
-              solutions to save you money.
-            </p>
+            <p>Our stress-free finance department that can find financial solutions to save you money.</p>
           </div>
           <div class="why-item">
             <i class="fa-solid fa-shield-halved why-icon"></i>
             <h4>Trusted Car Dealership</h4>
-            <p>
-              Our stress-free finance department that can find financial
-              solutions to save you money.
-            </p>
+            <p>Our stress-free finance department that can find financial solutions to save you money.</p>
           </div>
           <div class="why-item">
             <i class="fa-solid fa-tags why-icon"></i>
             <h4>Transparent Pricing</h4>
-            <p>
-              Our stress-free finance department that can find financial
-              solutions to save you money.
-            </p>
+            <p>Our stress-free finance department that can find financial solutions to save you money.</p>
           </div>
           <div class="why-item">
             <i class="fa-solid fa-screwdriver-wrench why-icon"></i>
             <h4>Expert Car Service</h4>
-            <p>
-              Our stress-free finance department that can find financial
-              solutions to save you money.
-            </p>
+            <p>Our stress-free finance department that can find financial solutions to save you money.</p>
           </div>
         </div>
       </div>
@@ -256,28 +195,19 @@
 
     <div class="modal" id="login-modal">
       <div class="modal-box">
-        <button class="close-btn" id="close-btn">&times;</button>
+        <button class="close-btn work" id="close-btn">×</button>
 
         <h2>Sign in</h2>
         <p class="modal-text">Please sign in to submit your listing.</p>
 
         <form id="login-form">
-          <input
-            type="text"
-            id="login-name"
-            placeholder="Email or username"
-            required
-          />
-          <input
-            type="password"
-            id="login-password"
-            placeholder="Password"
-            required
-          />
-          <button type="submit" class="login-btn">Sign In</button>
+          <input type="text" id="login-name" placeholder="Email or username" required />
+          <input type="password" id="login-password" placeholder="Password" required />
+          <button type="submit" class="login-btn work">Sign In</button>
         </form>
       </div>
     </div>
+
     <section class="types">
       <div class="section-head">
         <h2>Browse by Type</h2>
@@ -285,53 +215,441 @@
       </div>
 
       <div class="type-row">
-        <a
-          href="#"
-          class="type-card"
-          style="background-image: url(&quot;./2.jpg&quot;)"
-        >
-        </a>
-        <a
-          href="#"
-          class="type-card"
-          style="background-image: url(&quot;./3.jpg&quot;)"
-        >
-          <span class="type-label"
-            ><i class="fa-solid fa-car-side"></i> Sedan</span
-          >
+        <a href="#" class="type-card" style="background-image: url(./2.jpg)"></a>
+        <a href="#" class="type-card" style="background-image: url(./3.jpg)">
+          <span class="type-label"><i class="fa-solid fa-car-side"></i> Sedan</span>
         </a>
       </div>
 
       <div class="type-row">
-        <a
-          href="#"
-          class="type-card"
-          style="background-image: url(&quot;./4.jpg&quot;)"
-        >
-          <span class="type-label"
-            ><i class="fa-solid fa-car"></i> Hatchback</span
-          >
+        <a href="#" class="type-card" style="background-image: url(./4.jpg)">
+          <span class="type-label"><i class="fa-solid fa-car"></i> Hatchback</span>
         </a>
-        <a
-          href="#"
-          class="type-card"
-          style="background-image: url(&quot;./5.jpg&quot;)"
-        >
-          <span class="type-label"
-            ><i class="fa-solid fa-leaf"></i> Hybrid</span
-          >
+        <a href="#" class="type-card" style="background-image: url(./5.jpg)">
+          <span class="type-label"><i class="fa-solid fa-leaf"></i> Hybrid</span>
         </a>
-        <a
-          href="#"
-          class="type-card"
-          style="background-image: url(&quot;./6.jpg&quot;)"
-        >
-          <span class="type-label"
-            ><i class="fa-solid fa-car-rear"></i> Coupe</span
-          >
+        <a href="#" class="type-card" style="background-image: url(./6.jpg)">
+          <span class="type-label"><i class="fa-solid fa-car-rear"></i> Coupe</span>
         </a>
       </div>
     </section>
+
+    <section class="shop">
+      <div class="section-head">
+        <h2>Shop BoxCar Your Way</h2>
+        <a href="#" class="view-all">View More ↗</a>
+      </div>
+
+      <div class="shop-tabs">
+        <button class="active">New Cars For Sale</button>
+        <button>Used Cars For Sale</button>
+        <button>Browse By Type</button>
+        <button>Browse By Brand</button>
+      </div>
+
+      <div class="shop-links">
+        <div class="link-col">
+          <a href="#">Ford Cars</a>
+          <a href="#">Honda Cars</a>
+          <a href="#">Hyundai Cars</a>
+          <a href="#">Infiniti Cars</a>
+          <a href="#">Jaguar Cars</a>
+          <a href="#">Jeep Cars</a>
+        </div>
+        <div class="link-col">
+          <a href="#">Chrysler Cars</a>
+          <a href="#">Citroen Cars</a>
+          <a href="#">Cupra Cars</a>
+          <a href="#">Dacia Cars</a>
+          <a href="#">DS Cars</a>
+          <a href="#">Fiat Cars</a>
+        </div>
+        <div class="link-col">
+          <a href="#">Land Rover Cars</a>
+          <a href="#">Lexus Cars</a>
+          <a href="#">Mercedes-Benz Cars</a>
+          <a href="#">Mazda Cars</a>
+          <a href="#">MG Cars</a>
+          <a href="#">Kia Cars</a>
+        </div>
+        <div class="link-col">
+          <a href="#">Abarth Cars</a>
+          <a href="#">Romeo Cars</a>
+          <a href="#">Audi Cars</a>
+          <a href="#">Bentley Cars</a>
+          <a href="#">BMW Cars</a>
+          <a href="#">Chevrolet Cars</a>
+        </div>
+        <div class="link-col">
+          <a href="#">Mini Cars</a>
+          <a href="#">Mitsubishi Cars</a>
+          <a href="#">Nissan Cars</a>
+          <a href="#">Peugeot Cars</a>
+          <a href="#">Porsche Cars</a>
+          <a href="#">Renault Cars</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="section-head">
+        <h2>Explore Our Premium Brands</h2>
+        <a href="#" class="view-all">Show All Brands ↗</a>
+      </div>
+
+      <div class="brand-row">
+        <a href="#" class="brand-card">
+          <img src="./audi.png" alt="Audi" />
+          <p>Audi</p>
+        </a>
+        <a href="#" class="brand-card">
+          <img src="./bmw.png" alt="BMW" />
+          <p>BMW</p>
+        </a>
+        <a href="#" class="brand-card">
+          <img src="./ford.png" alt="Ford" />
+          <p>Ford</p>
+        </a>
+        <a href="#" class="brand-card">
+          <img src="./mercedes.png" alt="Mercedes Benz" />
+          <p>Mercedes Benz</p>
+        </a>
+        <a href="#" class="brand-card">
+          <img src="./peugeot.png" alt="Peugeot" />
+          <p>Peugeot</p>
+        </a>
+        <a href="#" class="brand-card">
+          <img src="./volkswagen.png" alt="Volkswagen" />
+          <p>Volkswagen</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="loan">
+      <div class="loan-box">
+        <div class="loan-left">
+          <h2>Auto Loan Calculator</h2>
+          <p class="loan-text">Use this car payment calculator to estimate monthly payments on your next new or used auto loan.</p>
+
+          <div class="loan-grid">
+            <div class="loan-field">
+              <label for="loan-price">Price ($)</label>
+              <input type="number" id="loan-price" value="10000" />
+            </div>
+            <div class="loan-field">
+              <label for="loan-rate">Interest Rate</label>
+              <input type="number" id="loan-rate" value="10" />
+            </div>
+            <div class="loan-field">
+              <label for="loan-term">Loan Term (year)</label>
+              <input type="number" id="loan-term" value="3" />
+            </div>
+            <div class="loan-field">
+              <label for="loan-down">Down Payment</label>
+              <input type="number" id="loan-down" value="5000" />
+            </div>
+          </div>
+
+          <button class="calc-btn work" id="calc-btn">Calculate <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+
+          <p class="loan-result" id="loan-result"></p>
+        </div>
+
+        <img class="loan-photo" src="./7.jpg" alt="Auto loan" />
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="review-head">
+        <h2>What our customers say</h2>
+        <p class="review-rate">Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
+      </div>
+
+      <div class="review-rail" id="review-rail">
+        <div class="review-card">
+          <div class="review-top">
+            <div class="stars">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+          </div>
+          <h4>Sales process was simple and easy</h4>
+          <p>Sales process was simple and easy. Maximillion was friendly and I didn't feel pressured at all.</p>
+          <span class="review-name">Ali Tufan</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="stars">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star off"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+          </div>
+          <h4>Good job for project</h4>
+          <p>Sales process was simple and easy. Maximillion was friendly and I didn't feel pressured at all.</p>
+          <span class="review-name">John Doe</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="stars">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star off"><i class="fa-solid fa-star"></i></span>
+              <span class="star off"><i class="fa-solid fa-star"></i></span>
+              <span class="star off"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+          </div>
+          <h4>Sales process was simple and easy</h4>
+          <p>At Voiture what matters to us is making your car search and buying experience easy.</p>
+          <span class="review-name">Brooklyn Simmons</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="stars">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+          </div>
+          <h4>Good job for project</h4>
+          <p>Sales process was simple and easy. Maximillion was friendly and I didn't feel pressured at all.</p>
+          <span class="review-name">Augusta Silva</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="stars">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+          </div>
+          <h4>Sales process was simple and easy</h4>
+          <p>Sales process was simple and easy. Maximillion was friendly and I didn't feel pressured at all.</p>
+          <span class="review-name">Jack Graham</span>
+        </div>
+      </div>
+
+      <div class="review-nav">
+        <button class="work" id="review-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="work" id="review-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="section-head">
+        <h2>Our Team</h2>
+        <a href="#" class="view-all">View All ↗</a>
+      </div>
+
+      <div class="team-row">
+        <div class="team-card">
+          <img src="./team1.jpg" alt="Courtney Henry" />
+          <h4>Courtney Henry</h4>
+          <p>Development Manager</p>
+        </div>
+        <div class="team-card">
+          <img src="./team2.jpg" alt="Jerome Bell" />
+          <h4>Jerome Bell</h4>
+          <p>Software Tester</p>
+        </div>
+        <div class="team-card">
+          <img src="./team3.jpg" alt="Arlene McCoy" />
+          <h4>Arlene McCoy</h4>
+          <p>Software Developer</p>
+        </div>
+        <div class="team-card">
+          <img src="./team4.jpg" alt="Jenny Wilson" />
+          <h4>Jenny Wilson</h4>
+          <p>UI/UX Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="app">
+      <div class="app-box">
+        <img class="app-bg" src="./8.jpg" alt="App" />
+
+        <div class="app-text">
+          <h2>Shop Used Cars, Whether You're On The Lot Or On The Go</h2>
+          <p>Download our app to save cars and create alerts, scan window stickers on our lot for more details, and even call dibs on a car by holding it for up to 7 days.</p>
+
+          <div class="app-btns">
+            <a href="#" class="app-btn">
+              <i class="fa-brands fa-apple"></i>
+              <span class="app-line"></span>
+              <div>
+                <p class="app-small">Download on the</p>
+                <p class="app-big">Apple Store</p>
+              </div>
+            </a>
+            <a href="#" class="app-btn">
+              <i class="fa-brands fa-google-play"></i>
+              <span class="app-line"></span>
+              <div>
+                <p class="app-small">Get in on</p>
+                <p class="app-big">Google Play</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="section-head">
+        <h2>Latest Blog Posts</h2>
+        <a href="#" class="view-all">View All ↗</a>
+      </div>
+
+      <div class="blog-row">
+        <div class="blog-card">
+          <div class="blog-photo" style="background-image: url(./blog1.jpg)">
+            <span class="blog-tag">Sound</span>
+          </div>
+          <p class="blog-meta">Admin <span class="blog-dot"></span> November 22, 2023</p>
+          <h4>2024 BMW ALPINA XB7 with exclusive details, extraordinary</h4>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-photo" style="background-image: url(./blog2.jpg)">
+            <span class="blog-tag">Accessories</span>
+          </div>
+          <p class="blog-meta">Admin <span class="blog-dot"></span> November 22, 2023</p>
+          <h4>BMW X6 M50i is designed to exceed your sportiest.</h4>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-photo" style="background-image: url(./blog3.jpg)">
+            <span class="blog-tag">Exterior</span>
+          </div>
+          <p class="blog-meta">Admin <span class="blog-dot"></span> November 22, 2023</p>
+          <h4>BMW X5 Gold 2024 Sport Review: Light on Sport</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-in">
+        <div class="footer-top">
+          <div class="footer-about">
+            <a href="#" class="footer-logo"><i class="fa-solid fa-car-rear"></i> CarHut</a>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es</p>
+            <div class="footer-pills">
+              <a href="#" class="footer-pill"><i class="fa-solid fa-mobile-screen"></i> +76 956 039 999</a>
+              <a href="#" class="footer-pill"><i class="fa-regular fa-envelope"></i> ali@boxcars.com</a>
+            </div>
+          </div>
+
+          <div class="footer-join">
+            <h3>Join CarHut</h3>
+            <p>Receive pricing updates, shopping tips & more!</p>
+            <input type="text" placeholder="Your email address" />
+            <button class="signup-btn">Sign Up</button>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Services</a>
+            <a href="#">FAQs</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#">Get in Touch</a>
+            <a href="#">Help center</a>
+            <a href="#">Live chat</a>
+            <a href="#">How it works</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Our Brands</h4>
+            <a href="#">Toyota</a>
+            <a href="#">Porsche</a>
+            <a href="#">Audi</a>
+            <a href="#">BMW</a>
+            <a href="#">Ford</a>
+            <a href="#">Nissan</a>
+            <a href="#">Peugeot</a>
+            <a href="#">Volkswagen</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Vehicles Type</h4>
+            <a href="#">Sedan</a>
+            <a href="#">Hatchback</a>
+            <a href="#">SUV</a>
+            <a href="#">Hybrid</a>
+            <a href="#">Electric</a>
+            <a href="#">Coupe</a>
+            <a href="#">Truck</a>
+            <a href="#">Convertible</a>
+          </div>
+
+          <div class="footer-col footer-last">
+            <h4>Our Mobile App</h4>
+            <a href="#" class="footer-app">
+              <i class="fa-brands fa-apple"></i>
+              <div>
+                <p class="fa-small">Download on the</p>
+                <p class="fa-big">Apple Store</p>
+              </div>
+            </a>
+            <a href="#" class="footer-app">
+              <i class="fa-brands fa-google-play"></i>
+              <div>
+                <p class="fa-small">Get in on</p>
+                <p class="fa-big">Google Play</p>
+              </div>
+            </a>
+
+            <h4 class="connect">Connect With Us</h4>
+            <div class="socials">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-in">
+          <p>© 2025 exemple.com. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Terms & Conditions</a>
+            <span class="blog-dot"></span>
+            <a href="#">Privacy Notice</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
 
     <script src="./oxrgi.js"></script>
   </body>

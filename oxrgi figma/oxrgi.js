@@ -34,24 +34,50 @@ form.onsubmit = function (e) {
   modal.style.display = "none";
 };
 
-var rail = document.getElementById("rail");
-var cardGap = 22;
-function cardWidth() {
-  var card = rail.querySelector(".car-card");
-  return card ? card.offsetWidth + cardGap : 400;
-}
-document.getElementById("nextBtn").addEventListener("click", function () {
-  rail.scrollBy({ left: cardWidth(), behavior: "smooth" });
-});
-document.getElementById("prevBtn").addEventListener("click", function () {
-  rail.scrollBy({ left: -cardWidth(), behavior: "smooth" });
-});
+var calcBtn = document.getElementById("calc-btn");
+var loanResult = document.getElementById("loan-result");
 
-document.querySelectorAll(".tabs button").forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    document.querySelectorAll(".tabs button").forEach(function (b) {
-      b.classList.remove("active");
-    });
-    btn.classList.add("active");
-  });
-});
+calcBtn.onclick = function () {
+  var price = Number(document.getElementById("loan-price").value);
+  var rate = Number(document.getElementById("loan-rate").value);
+  var years = Number(document.getElementById("loan-term").value);
+  var down = Number(document.getElementById("loan-down").value);
+
+  var loan = price - down;
+  var months = years * 12;
+  var monthlyRate = rate / 100 / 12;
+
+  if (loan <= 0 || months <= 0) {
+    loanResult.innerHTML = "Please check your numbers.";
+    return;
+  }
+
+  var payment;
+  if (monthlyRate == 0) {
+    payment = loan / months;
+  } else {
+    payment = (loan * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -months));
+  }
+
+  loanResult.innerHTML = "Monthly payment: $" + payment.toFixed(2);
+};
+
+var rail = document.getElementById("rail");
+
+document.getElementById("nextBtn").onclick = function () {
+  rail.scrollBy({ left: 440, behavior: "smooth" });
+};
+
+document.getElementById("prevBtn").onclick = function () {
+  rail.scrollBy({ left: -440, behavior: "smooth" });
+};
+
+var reviewRail = document.getElementById("review-rail");
+
+document.getElementById("review-next").onclick = function () {
+  reviewRail.scrollBy({ left: 286, behavior: "smooth" });
+};
+
+document.getElementById("review-prev").onclick = function () {
+  reviewRail.scrollBy({ left: -286, behavior: "smooth" });
+};
