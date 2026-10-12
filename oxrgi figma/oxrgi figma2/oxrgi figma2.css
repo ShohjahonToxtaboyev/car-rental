@@ -1,3 +1,9 @@
+/* ---------- O'zgaruvchi (yon bo'sh joy) ---------- */
+
+:root {
+  --side: 190px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +15,9 @@ html {
 }
 
 body {
+  font-family: "DM Sans", sans-serif;
   overflow-x: hidden;
-      color: #0b0f2a;
+  color: #0b0f2a;
 }
 
 a {
@@ -32,10 +39,6 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-section {
-  --side: max(24px, calc((100vw - 1065px) / 2));
-}
-
 .grey {
   background-color: #f9fafc;
 }
@@ -47,7 +50,7 @@ section {
   vertical-align: middle;
 }
 
-
+/* ---------- Hero ---------- */
 
 .hero {
   position: relative;
@@ -240,6 +243,10 @@ section {
   padding: 80px var(--side) 80px;
 }
 
+.specials {
+  padding: 0 var(--side) 80px;
+}
+
 .tabs {
   display: flex;
   gap: 24px;
@@ -409,7 +416,7 @@ section {
 /* ---------- Why Choose Us ---------- */
 
 .why {
-  padding: 70px var(--side) 0;
+  padding: 70px var(--side) 70px;
 }
 
 .why h2 {
@@ -423,11 +430,10 @@ section {
   gap: 32px;
 }
 
-.why-icon {
+.why-item i {
   display: block;
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
+  font-size: 36px;
+  color: #405ff2;
   margin-bottom: 22px;
 }
 
@@ -442,16 +448,10 @@ section {
   line-height: 1.9;
 }
 
-/* ---------- Specials ---------- */
-
-.specials {
-  padding: 90px var(--side) 90px;
-}
-
 /* ---------- Reviews ---------- */
 
 .reviews {
-  padding: 0 var(--side) 90px;
+  padding: 0 var(--side) 80px;
 }
 
 .review-head {
@@ -642,7 +642,10 @@ section {
   overflow: hidden;
 }
 
+/* MUAMMO SHU YERDA EDI: border-box padding'ni max-width ichiga olardi.
+   content-box qilsak, 520px faqat matn uchun bo'ladi. */
 .app-text {
+  box-sizing: content-box;
   align-self: center;
   max-width: 520px;
   padding: 60px 0 60px max(24px, calc((100vw - 1065px) / 2));
@@ -688,11 +691,15 @@ section {
 
 .app-small {
   font-size: 9px;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .app-big {
   font-size: 13px;
   font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .app-phone {
@@ -973,6 +980,20 @@ section {
 
 /* ---------- Kichik ekranlar ---------- */
 
+@media (max-width: 1200px) {
+  :root {
+    --side: 80px;
+  }
+
+  .car-info {
+    left: 80px;
+  }
+
+  .banner {
+    padding: 0 80px;
+  }
+}
+
 @media (max-width: 1000px) {
   .menu {
     display: none;
@@ -1000,6 +1021,10 @@ section {
 }
 
 @media (max-width: 900px) {
+  :root {
+    --side: 40px;
+  }
+
   .type-row,
   .brand-row {
     grid-template-columns: repeat(3, 1fr);
@@ -1055,6 +1080,10 @@ section {
 /* ---------- Telefon ---------- */
 
 @media (max-width: 600px) {
+  :root {
+    --side: 24px;
+  }
+
   .header {
     padding: 20px 24px;
   }
@@ -1104,7 +1133,6 @@ section {
   }
 
   .types,
-  .specials,
   .team {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1184,6 +1212,7 @@ section {
 
   .app-phone {
     height: 260px;
+    margin-right: auto;
   }
 
   .banner {
