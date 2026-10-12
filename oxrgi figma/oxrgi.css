@@ -2,314 +2,242 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 1s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  color: #15161a;
-  background: #ffffff;
+  overflow-x: hidden;
+  font-family: "DM Sans", Arial, sans-serif;
+  color: white;
 }
 
 a {
+  color: white;
   text-decoration: none;
 }
 
+button {
+  font-family: inherit;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---------- Hero ---------- */
+
 .hero {
-  height: 100vh;
-  min-height: 640px;
   position: relative;
-  background-image: url(./salom/1.jpg);
+  height: 100vh;
+  min-height: 650px;
+  background-image: linear-gradient(rgba(20, 25, 45, 0.45), rgba(20, 25, 45, 0.45)), url(./salom/1.jpg);
   background-size: cover;
   background-position: center;
-  color: white;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0.15) 40%,
-    rgba(0, 0, 0, 0.5)
-  );
-}
-
-.hero a {
-  color: white;
-}
-
-.car-info {
-  position: absolute;
-  left: 115px;
-  top: 200px;
-}
-
-.price {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.car-info h1 {
-  font-size: 40px;
-  font-weight: normal;
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
-  z-index: 5;
+  padding: 30px 44px;
+  font-size: 13px;
 }
 
 .left {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .logo {
-  font-size: 18px;
-  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .phone {
-  white-space: nowrap;
+  font-size: 12px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 28px;
 }
 
 .menu-btn {
   background: none;
   border: none;
   color: white;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
-  white-space: nowrap;
 }
 
-.menu-link {
-  font-size: 12px;
-  white-space: nowrap;
+.menu i {
+  font-size: 10px;
 }
 
 .login {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
+  margin-left: 12px;
 }
 
 .submit-btn {
   border: 1px solid white;
-  border-radius: 8px;
-  padding: 10px 20px;
-  white-space: nowrap;
-}
-
-.specs {
-  position: absolute;
-  right: 25px;
-  top: 80px;
-  width: 130px;
-  padding: 25px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-}
-
-.spec {
-  margin-bottom: 20px;
-}
-
-.spec i {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.small {
-  font-size: 9px;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 2px;
-}
-
-.big {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.learn-btn {
-  display: block;
-  background-color: white;
-  color: black;
-  border-radius: 8px;
-  padding: 10px;
-  height: 60px;
-  font-size: 10px;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  justify-content: center;
-  align-items: center;
-  z-index: 50;
-}
-
-.modal-box {
-  position: relative;
-  width: 320px;
-  padding: 30px;
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-}
-
-.modal-box h2 {
-  font-size: 22px;
-  font-weight: normal;
-  margin-bottom: 8px;
-}
-
-.modal-text {
+  border-radius: 12px;
+  padding: 14px 20px;
   font-size: 13px;
-  color: #555555;
+}
+
+.car-info {
+  position: absolute;
+  left: 190px;
+  top: 320px;
+}
+
+.car-info .price {
+  font-size: 30px;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
-.modal-box input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #cccccc;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-.login-btn {
-  width: 100%;
-  padding: 12px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 14px;
-  background: none;
-  border: none;
-  font-size: 26px;
-  cursor: pointer;
+.car-info h1 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .dots {
   position: absolute;
-  left: 115px;
-  bottom: 40px;
+  left: 205px;
+  bottom: 45px;
   display: flex;
   gap: 8px;
 }
 
 .dots span {
-  width: 20px;
-  height: 2px;
+  width: 22px;
+  height: 3px;
   background-color: white;
   opacity: 0.5;
+  cursor: pointer;
 }
 
-.dots span:first-child {
+.dots span.active {
   opacity: 1;
 }
 
-.vehicles {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 64px 24px 8px;
+.specs {
+  position: absolute;
+  right: 48px;
+  top: 130px;
+  width: 210px;
+  height: 550px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
 }
+
+.spec {
+  margin-bottom: 18px;
+}
+
+.spec i {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.spec .big {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.spec .small {
+  font-size: 12px;
+}
+
+.learn-btn {
+  display: block;
+  width: 125px;
+  height: 88px;
+  margin-top: 28px;
+  padding: 12px;
+  background-color: white;
+  color: black;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* ---------- Umumiy qismlar ---------- */
 
 .section-head {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
-  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 36px;
 }
 
 .section-head h2 {
-  font-size: 30px;
-  letter-spacing: -0.02em;
-  margin: 0 0 18px;
-  font-weight: normal;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 .view-all {
+  color: #0b0f2a;
   font-size: 14px;
-  font-weight: 600;
-  color: #15161a;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding-bottom: 18px;
-  white-space: nowrap;
+  margin-top: 8px;
 }
 
-.tabs {
+.tabs,
+.shop-tabs {
   display: flex;
-  gap: 28px;
-  border-bottom: 1px solid #e7e7ea;
-  font-size: 14.5px;
-  color: #6b6f76;
+  gap: 24px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-.tabs button {
+.tabs button,
+.shop-tabs button {
   background: none;
-  border: 0;
-  font: inherit;
-  color: inherit;
-  padding: 0 0 14px;
-  cursor: pointer;
+  border: none;
   border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  color: #0b0f2a;
+  cursor: pointer;
 }
 
-.tabs button.active {
-  color: #15161a;
-  font-weight: 600;
-  border-bottom-color: #3f6df0;
+.tabs button.active,
+.shop-tabs button.active {
+  border-bottom-color: #405ff2;
 }
 
-.rail-wrap {
-  position: relative;
-  margin-top: 22px;
+/* ---------- Explore All Vehicles ---------- */
+
+.vehicles {
+  --side: max(24px, calc((100vw - 1065px) / 2));
+  padding: 90px 0 90px var(--side);
+  color: #0b0f2a;
+}
+
+.vehicles .section-head,
+.vehicles .tabs {
+  margin-right: var(--side);
 }
 
 .rail {
   display: flex;
   gap: 22px;
+  margin-top: 38px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 6px;
   scrollbar-width: none;
 }
 
@@ -318,319 +246,335 @@ a {
 }
 
 .car-card {
-  flex: 0 0 auto;
-  width: min(420px, 86vw);
-  scroll-snap-align: start;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #1e2130;
-  position: relative;
+  flex: 0 0 521px;
+  height: 208px;
   display: flex;
-  flex-direction: column;
+  background-color: #383a48;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .car-photo {
   position: relative;
-  aspect-ratio: 16/10;
+  flex: 0 0 243px;
   background-size: cover;
   background-position: center;
 }
 
 .save-btn {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 34px;
-  height: 34px;
+  top: 16px;
+  right: 14px;
+  width: 26px;
+  height: 26px;
+  border: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 0;
+  background-color: white;
+  color: #0b0f2a;
+  font-size: 10px;
   cursor: pointer;
-}
-
-.save-btn i {
-  font-size: 14px;
-  color: #1e2130;
 }
 
 .pbadge {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  background: #4c8c4a;
-  color: #ffffff;
+  top: 16px;
+  left: 16px;
+  background-color: #3a9a3f;
+  color: white;
   font-size: 12px;
-  font-weight: 600;
-  padding: 5px 10px;
-  border-radius: 999px;
+  padding: 5px 12px;
+  border-radius: 20px;
 }
 
-.car-card .car-body {
-  padding: 18px 20px 20px;
-  color: #ffffff;
+.car-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 22px;
 }
 
-.car-card .car-body h3 {
-  margin: 0 0 4px;
-  font-size: 17px;
+.car-body h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
 }
 
 .car-sub {
-  margin: 0 0 14px;
-  font-size: 13px;
-  color: #a7abbb;
+  font-size: 11px;
+  color: #d0d2dc;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  margin-bottom: 18px;
 }
 
 .spec-row {
   display: flex;
-  gap: 18px;
-  font-size: 12.5px;
-  color: #c7cad6;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-}
-
-.spec-row span {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
 }
 
 .spec-row i {
-  font-size: 12px;
-  color: #8f93a3;
-  width: 14px;
-  text-align: center;
+  width: 22px;
+  font-size: 11px;
 }
 
 .car-footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  padding-top: 14px;
+  align-items: center;
+  margin-top: auto;
 }
 
 .car-price {
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .details-link {
-  font-size: 13.5px;
-  font-weight: 600;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.rail-nav {
-  display: flex;
-  gap: 10px;
-  margin-top: 22px;
-}
-
-.rail-nav button {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 1px solid #e7e7ea;
-  background: #ffffff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.rail-nav button:hover {
-  background: #f4f5f7;
-}
-
-.rail-nav button i {
   font-size: 13px;
-  color: #15161a;
 }
+
+.rail-nav,
+.review-nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 34px;
+}
+
+.rail-nav button,
+.review-nav button {
+  width: 46px;
+  height: 28px;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  background-color: white;
+  color: #0b0f2a;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* ---------- Why Choose Us ---------- */
 
 .why {
-  max-width: 1200px;
-  margin: 56px auto 0;
-  padding: 0 24px 64px;
+  padding: 0 40px 70px;
 }
 
 .why-panel {
-  background: #f4f5f7;
+  background-color: #f9fafc;
   border-radius: 20px;
-  padding: 56px 44px;
+  padding: 90px 150px;
+  color: #0b0f2a;
 }
 
 .why-panel h2 {
-  font-size: 27px;
-  letter-spacing: -0.02em;
-  margin: 0 0 40px;
-  font-weight: normal;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .why-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 36px;
+  gap: 32px;
 }
 
 .why-icon {
-  font-size: 24px;
-  color: #3f6df0;
-  margin-bottom: 14px;
   display: block;
+  font-size: 34px;
+  color: #405ff2;
+  margin-bottom: 22px;
 }
 
 .why-item h4 {
-  margin: 0 0 8px;
   font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 14px;
 }
 
 .why-item p {
-  margin: 0;
-  font-size: 13.5px;
-  line-height: 1.55;
-  color: #6b6f76;
+  font-size: 12px;
+  line-height: 1.9;
 }
 
+/* ---------- Sign In oynasi ---------- */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 11, 32, 0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-box {
+  position: relative;
+  width: 400px;
+  padding: 40px 32px 32px;
+  background-color: white;
+  color: #0b0f2a;
+  border-radius: 16px;
+}
+
+.modal-box h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.modal-text {
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#login-form input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  margin-bottom: 12px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.login-btn {
+  width: 100%;
+  height: 46px;
+  background-color: #405ff2;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ---------- Browse by Type ---------- */
+
 .types {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 64px;
+  --side: max(24px, calc((100vw - 1065px) / 2));
+  padding: 30px var(--side) 90px;
+  color: #0b0f2a;
 }
 
 .type-row {
   display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
+  gap: 22px;
+  margin-bottom: 22px;
 }
 
 .type-card {
+  position: relative;
   flex: 1;
-  height: 250px;
+  height: 266px;
   border-radius: 12px;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .type-label {
   position: absolute;
-  left: 16px;
-  bottom: 16px;
+  left: 22px;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   background-color: white;
-  color: black;
-  font-size: 12px;
-  padding: 10px 18px;
+  color: #0b0f2a;
+  font-size: 13px;
+  padding: 10px 20px;
   border-radius: 20px;
 }
 
-/* Shop BoxCar Your Way */
+/* ---------- Shop BoxCar Your Way ---------- */
 
 .shop {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 64px;
+  --side: max(24px, calc((100vw - 1065px) / 2));
+  padding: 30px var(--side) 80px;
+  color: #0b0f2a;
 }
 
 .shop-tabs {
-  display: flex;
-  gap: 28px;
-  border-bottom: 1px solid #e7e7ea;
-  font-size: 14px;
-}
-
-.shop-tabs button {
-  background: none;
-  border: 0;
-  font: inherit;
-  color: #15161a;
-  padding: 0 0 14px;
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-}
-
-.shop-tabs button.active {
-  border-bottom-color: #3f6df0;
+  margin-bottom: 36px;
 }
 
 .shop-links {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
-  margin-top: 28px;
 }
 
 .link-col {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 14px;
 }
 
 .link-col a {
-  font-size: 12.5px;
-  color: #15161a;
+  color: #0b0f2a;
+  font-size: 13px;
 }
 
-.link-col a:hover {
-  color: #3f6df0;
-}
-
-/* Explore Our Premium Brands */
+/* ---------- Premium Brands ---------- */
 
 .brands {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 64px;
+  --side: max(24px, calc((100vw - 1115px) / 2));
+  padding: 0 var(--side) 80px;
+  color: #0b0f2a;
 }
 
 .brand-row {
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 
 .brand-card {
   flex: 1;
-  height: 120px;
-  border: 1px solid #e7e7ea;
-  border-radius: 12px;
+  height: 143px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  color: #15161a;
+  gap: 24px;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  color: #0b0f2a;
 }
 
 .brand-card img {
-  height: 40px;
-  max-width: 70px;
+  height: 44px;
+  max-width: 80px;
   object-fit: contain;
 }
 
 .brand-card p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
-.brand-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-
-/* Auto Loan Calculator */
+/* ---------- Auto Loan Calculator ---------- */
 
 .loan {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 64px;
+  padding: 0 16px 80px;
+  color: #0b0f2a;
 }
 
 .loan-box {
@@ -642,33 +586,29 @@ a {
 
 .loan-left {
   flex: 1;
-  padding: 80px 60px;
+  padding: 110px 80px 110px 159px;
 }
 
 .loan-left h2 {
-  font-size: 28px;
-  font-weight: normal;
-  margin-bottom: 14px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .loan-text {
   font-size: 13px;
-  line-height: 1.7;
-  color: #333333;
+  line-height: 1.9;
   margin-bottom: 30px;
-  max-width: 330px;
 }
 
 .loan-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  max-width: 330px;
-  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 .loan-field {
-  width: calc(50% - 6px);
   background-color: white;
   border-radius: 10px;
   padding: 10px 12px;
@@ -676,7 +616,7 @@ a {
 
 .loan-field label {
   display: block;
-  font-size: 9px;
+  font-size: 11px;
   color: #6b6f76;
   margin-bottom: 4px;
 }
@@ -685,70 +625,58 @@ a {
   width: 100%;
   border: none;
   outline: none;
-  font-size: 13px;
-  color: #15161a;
   background: none;
+  font-family: inherit;
+  font-size: 13px;
 }
 
 .calc-btn {
   width: 100%;
-  max-width: 330px;
-  padding: 16px;
-  background-color: #3f6df0;
+  height: 44px;
+  background-color: #405ff2;
   color: white;
   border: none;
-  border-radius: 10px;
-  font-size: 12px;
+  border-radius: 12px;
+  font-size: 13px;
   cursor: pointer;
-}
-
-.loan-result {
-  margin-top: 18px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #15161a;
 }
 
 .loan-photo {
   flex: 1;
   width: 50%;
-  min-width: 0;
-  min-height: 380px;
+  min-height: 532px;
   object-fit: cover;
 }
 
-/* What our customers say */
+/* ---------- What our customers say ---------- */
 
 .reviews {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 64px;
+  --side: max(24px, calc((100vw - 1230px) / 2));
+  padding: 0 0 90px var(--side);
+  color: #0b0f2a;
 }
 
 .review-head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 36px;
+  flex-wrap: wrap;
+  gap: 20px 340px;
+  margin-bottom: 44px;
 }
 
 .review-head h2 {
-  font-size: 30px;
-  letter-spacing: -0.02em;
-  font-weight: normal;
+  font-size: 34px;
+  font-weight: 500;
 }
 
 .review-rate {
-  font-size: 11px;
-  color: #15161a;
+  font-size: 12px;
 }
 
 .review-rail {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
 
@@ -757,19 +685,18 @@ a {
 }
 
 .review-card {
-  flex: 0 0 auto;
-  width: 270px;
-  scroll-snap-align: start;
+  flex: 0 0 260px;
+  height: 168px;
   background-color: #f9fafc;
   border-radius: 12px;
-  padding: 18px 20px;
+  padding: 24px;
 }
 
 .review-top {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .stars {
@@ -778,11 +705,11 @@ a {
 }
 
 .star {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-color: #00b67a;
   color: white;
-  font-size: 9px;
+  font-size: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -793,27 +720,20 @@ a {
 }
 
 .verified {
-  font-size: 10px;
-  color: #6b6f76;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.verified i {
   font-size: 12px;
+  color: #6b6f76;
 }
 
 .review-card h4 {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 
 .review-card p {
-  font-size: 11px;
-  line-height: 1.9;
-  color: #333333;
-  margin-bottom: 14px;
+  font-size: 12px;
+  line-height: 1.75;
+  margin-bottom: 12px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -821,84 +741,65 @@ a {
 }
 
 .review-name {
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333333;
 }
 
 .review-nav {
-  display: flex;
-  gap: 10px;
-  margin-top: 26px;
+  margin-top: 40px;
 }
 
 .review-nav button {
-  width: 52px;
-  height: 28px;
-  border-radius: 20px;
-  border: 1px solid #e7e7ea;
-  background: #ffffff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 48px;
+  height: 32px;
 }
 
-.review-nav button i {
-  font-size: 10px;
-  color: #15161a;
-}
-
-/* Our Team */
+/* ---------- Our Team ---------- */
 
 .team {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 64px;
+  --side: max(24px, calc((100vw - 1115px) / 2));
+  padding: 0 var(--side) 90px;
+  color: #0b0f2a;
 }
 
 .team-row {
-  display: flex;
-  gap: 20px;
-}
-
-.team-card {
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .team-card img {
   width: 100%;
-  height: 260px;
+  height: 316px;
   object-fit: cover;
   border-radius: 12px;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .team-card h4 {
-  font-size: 14px;
-  font-weight: normal;
-  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .team-card p {
-  font-size: 11px;
-  color: #333333;
+  font-size: 12px;
 }
 
-/* App banner */
+/* ---------- App ---------- */
 
 .app {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 64px;
+  padding: 0 16px 90px;
 }
 
 .app-box {
   position: relative;
-  height: 280px;
+  min-height: 360px;
   border-radius: 16px;
   overflow: hidden;
-  background-color: #3f6df0;
+  background-color: #050b20;
 }
 
 .app-bg {
@@ -912,23 +813,21 @@ a {
 
 .app-text {
   position: relative;
-  padding: 62px 0 0 114px;
-  color: white;
+  max-width: 560px;
+  padding: 80px 0 80px 150px;
 }
 
 .app-text h2 {
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 1.6;
-  max-width: 400px;
-  margin-bottom: 22px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 18px;
 }
 
 .app-text p {
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.9;
-  max-width: 400px;
-  margin-bottom: 22px;
+  margin-bottom: 28px;
 }
 
 .app-btns {
@@ -939,53 +838,46 @@ a {
 .app-btn {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  padding: 10px 18px;
   background-color: white;
-  color: #3f6df0;
-  border-radius: 10px;
-  padding: 10px 20px;
+  color: #0b0f2a;
+  border-radius: 12px;
 }
 
 .app-btn i {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .app-line {
   width: 1px;
-  height: 26px;
-  background-color: #cccccc;
+  height: 28px;
+  background-color: #e1e1e1;
 }
 
 .app-btn .app-small {
-  font-size: 9px;
-  margin: 0;
-  max-width: none;
-  line-height: 1.4;
+  font-size: 10px;
+  margin-bottom: 0;
 }
 
 .app-btn .app-big {
-  font-size: 11px;
-  font-weight: bold;
-  margin: 0;
-  max-width: none;
-  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
-/* Latest Blog Posts */
+/* ---------- Blog ---------- */
 
 .blog {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px 80px;
+  --side: max(24px, calc((100vw - 1065px) / 2));
+  padding: 0 var(--side) 90px;
+  color: #0b0f2a;
 }
 
 .blog-row {
-  display: flex;
-  gap: 16px;
-}
-
-.blog-card {
-  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .blog-photo {
@@ -999,12 +891,11 @@ a {
 
 .blog-tag {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 16px;
+  left: 16px;
   background-color: white;
-  color: #15161a;
-  font-size: 11px;
-  padding: 7px 14px;
+  font-size: 12px;
+  padding: 5px 14px;
   border-radius: 20px;
 }
 
@@ -1012,8 +903,8 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 11px;
-  color: #333333;
+  font-size: 12px;
+  color: #6b6f76;
   margin-bottom: 10px;
 }
 
@@ -1021,108 +912,110 @@ a {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background-color: #999999;
+  background-color: white;
+  display: inline-block;
+}
+
+.blog-meta .blog-dot {
+  background-color: #6b6f76;
 }
 
 .blog-card h4 {
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-/* Footer */
+/* ---------- Footer ---------- */
 
 .footer {
-  background-color: #050a24;
-  color: white;
   position: relative;
-}
-
-.footer a {
+  background-color: #050b20;
   color: white;
 }
 
 .footer-in {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 56px 24px 40px;
+  padding: 70px 24px 40px;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding-bottom: 44px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 46px;
+  border-bottom: 1px solid #1a2036;
 }
 
 .footer-logo {
   display: inline-block;
   font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 26px;
 }
 
 .footer-about p {
-  font-size: 11px;
+  max-width: 290px;
+  font-size: 12px;
   line-height: 2;
-  max-width: 230px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 .footer-pills {
   display: flex;
-  gap: 12px;
+  gap: 14px;
 }
 
 .footer-pill {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   border: 1px solid white;
-  border-radius: 20px;
-  padding: 9px 18px;
-  font-size: 11px;
+  border-radius: 24px;
+  padding: 10px 18px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
 .footer-join {
-  width: 100%;
-  max-width: 340px;
+  width: 300px;
 }
 
 .footer-join h3 {
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .footer-join p {
-  font-size: 11px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 
 .footer-join input {
   display: block;
   width: 100%;
-  padding: 18px 14px;
+  height: 50px;
+  padding: 0 14px;
+  margin-bottom: 8px;
   background-color: #1a2033;
+  color: white;
   border: none;
   outline: none;
-  border-radius: 8px;
-  color: white;
-  font-size: 11px;
-  margin-bottom: 14px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 12px;
 }
 
 .signup-btn {
   width: 100%;
-  padding: 16px;
-  background-color: #3f6df0;
+  height: 42px;
+  background-color: #405ff2;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 11px;
+  border-radius: 10px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -1136,63 +1029,53 @@ a {
 .footer-col {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .footer-col h4 {
-  font-size: 15px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 
 .footer-col a {
-  font-size: 11px;
-}
-
-.footer-col a:hover {
-  color: #3f6df0;
+  font-size: 12px;
 }
 
 .footer-last {
   gap: 10px;
 }
 
-.footer-last h4 {
-  margin-bottom: 4px;
+.footer-last .connect {
+  margin-top: 18px;
 }
 
 .footer-app {
   display: flex;
   align-items: center;
-  gap: 12px;
-  width: 110px;
+  gap: 14px;
+  width: 140px;
+  height: 42px;
+  padding: 0 14px;
   background-color: #1a2033;
-  border-radius: 8px;
-  padding: 10px 12px;
+  border-radius: 10px;
 }
 
 .footer-app i {
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.footer-app .fa-small {
-  font-size: 7px;
-  margin: 0;
+.fa-small {
+  font-size: 8px;
 }
 
-.footer-app .fa-big {
-  font-size: 10px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.footer-last .connect {
-  margin-top: 16px;
+.fa-big {
+  font-size: 11px;
 }
 
 .socials {
   display: flex;
-  gap: 24px;
+  gap: 26px;
 }
 
 .socials a {
@@ -1200,98 +1083,93 @@ a {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #1a2036;
 }
 
 .footer-bottom-in {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 22px 24px;
+  padding: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-}
-
-.footer-bottom-in p {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .footer-bottom-links {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.footer-bottom-links a {
-  font-size: 11px;
-}
-
-.footer-bottom-links .blog-dot {
-  background-color: white;
+  gap: 12px;
 }
 
 .to-top {
-  position: fixed;
+  position: absolute;
   right: 12px;
   bottom: 12px;
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  background-color: #3f6df0;
+  background-color: #405ff2;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 9px;
 }
 
-/* Responsive */
+/* ---------- Strelka rasmi ---------- */
 
-@media (max-width: 860px) {
-  .why-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.arrow {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 
-@media (max-width: 768px) {
-  .car-info {
-    left: 20px;
-    top: 120px;
-  }
+.details-link .arrow,
+.calc-btn .arrow {
+  filter: invert(1);
+}
 
-  .car-info h1 {
-    font-size: 26px;
-  }
+.why-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
 
+/* ---------- Kichik ekranlar ---------- */
+
+@media (max-width: 1000px) {
+  .menu,
   .specs {
     display: none;
   }
 
-  .header {
-    flex-wrap: wrap;
-    gap: 10px;
+  .car-info {
+    left: 40px;
   }
 
-  .menu {
-    flex-wrap: wrap;
-    gap: 10px;
+  .car-info h1 {
+    font-size: 40px;
   }
 
-  .type-row {
-    flex-direction: column;
+  .dots {
+    left: 55px;
   }
+}
 
+@media (max-width: 900px) {
+  .why-grid,
+  .team-row,
   .shop-links {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .link-col {
-    flex: 0 0 45%;
+  .blog-row {
+    grid-template-columns: 1fr;
   }
 
-  .shop-tabs {
-    overflow-x: auto;
-    white-space: nowrap;
+  .why-panel {
+    padding: 50px 24px;
   }
 
   .brand-row {
@@ -1299,104 +1177,223 @@ a {
   }
 
   .brand-card {
-    flex: 0 0 30%;
+    flex: 0 0 calc(33.33% - 16px);
   }
 
-  .loan-box {
+  .loan-box,
+  .type-row,
+  .footer-top,
+  .footer-bottom-in {
     flex-direction: column;
   }
 
   .loan-left {
-    padding: 40px 24px;
+    padding: 50px 24px;
   }
 
   .loan-photo {
-    flex: none;
     width: 100%;
-    height: 260px;
     min-height: 0;
+    height: 280px;
   }
 
-  .review-head {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .team-row {
-    flex-wrap: wrap;
-  }
-
-  .team-card {
-    flex: 0 0 calc(50% - 10px);
-  }
-
-  .app-box {
-    height: auto;
-    padding-bottom: 40px;
-  }
-
-  .app-text {
-    padding: 40px 24px 0;
-  }
-
-  .app-btns {
-    flex-wrap: wrap;
-  }
-
-  .blog-row {
-    flex-direction: column;
-  }
-
-  .footer-top {
-    flex-direction: column;
-  }
-
+  .footer-cols,
   .footer-pills {
     flex-wrap: wrap;
   }
 
-  .footer-cols {
-    flex-wrap: wrap;
+  .footer-join {
+    width: 100%;
   }
 
-  .footer-col {
-    flex: 0 0 calc(50% - 12px);
+  .app-text {
+    padding: 50px 24px;
   }
 
-  .footer-bottom-in {
-    flex-direction: column;
-    align-items: flex-start;
+  .type-card {
+    flex: none;
+    width: 100%;
   }
 }
 
-@media (max-width: 520px) {
+/* ---------- Telefon ---------- */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 24px;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .submit-btn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .car-info {
+    left: 24px;
+    top: 260px;
+  }
+
+  .car-info .price {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .car-info h1 {
+    font-size: 32px;
+  }
+
+  .dots {
+    left: 24px;
+    bottom: 30px;
+  }
+
+  .section-head h2 {
+    font-size: 24px;
+  }
+
+  .vehicles {
+    padding: 50px 0 50px var(--side);
+  }
+
+  .tabs,
+  .shop-tabs {
+    gap: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .car-card {
+    flex: 0 0 280px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .car-photo {
+    flex: 0 0 170px;
+  }
+
+  .car-body {
+    padding: 16px;
+  }
+
+  .car-footer {
+    margin-top: 16px;
+  }
+
+  .why {
+    padding: 0 16px 50px;
+  }
+
   .why-panel {
-    padding: 36px 22px;
+    padding: 40px 20px;
   }
 
   .why-grid {
     grid-template-columns: 1fr;
   }
 
-  .section-head {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+  .modal-box {
+    width: 90%;
+    padding: 36px 20px 24px;
+  }
+
+  .types {
+    padding: 10px var(--side) 50px;
+  }
+
+  .type-card {
+    flex: none;
+    width: 100%;
+    height: 200px;
+  }
+
+  .shop {
+    padding: 10px var(--side) 50px;
+  }
+
+  .brands {
+    padding-bottom: 50px;
+  }
+
+  .brand-row {
+    gap: 12px;
   }
 
   .brand-card {
-    flex: 0 0 45%;
+    flex: 0 0 calc(50% - 6px);
+    height: 120px;
   }
-}
 
-/* Faqat "work" klassi borlar ishlaydi */
+  .loan {
+    padding: 0 16px 50px;
+  }
 
-a,
-button {
-  pointer-events: none;
-}
+  .loan-left {
+    padding: 36px 20px;
+  }
 
-.work {
-  pointer-events: auto;
+  .loan-left h2 {
+    font-size: 24px;
+  }
+
+  .loan-grid {
+    gap: 12px;
+  }
+
+  .reviews {
+    padding-bottom: 50px;
+  }
+
+  .review-head h2 {
+    font-size: 26px;
+  }
+
+  .team {
+    padding-bottom: 50px;
+  }
+
+  .team-row {
+    gap: 14px;
+  }
+
+  .team-card img {
+    height: 200px;
+  }
+
+  .app {
+    padding: 0 16px 50px;
+  }
+
+  .app-text {
+    padding: 40px 20px;
+  }
+
+  .app-text h2 {
+    font-size: 24px;
+  }
+
+  .app-btns {
+    flex-direction: column;
+  }
+
+  .blog {
+    padding-bottom: 50px;
+  }
+
+  .footer-in {
+    padding: 50px 24px 30px;
+  }
+
+  .footer-col {
+    flex: 0 0 calc(50% - 12px);
+  }
+
+  .footer-pill {
+    font-size: 11px;
+    padding: 10px 14px;
+  }
 }

@@ -1,0 +1,1206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+      color: #0b0f2a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+section {
+  --side: max(24px, calc((100vw - 1065px) / 2));
+}
+
+.grey {
+  background-color: #f9fafc;
+}
+
+.arrow {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
+  color: white;
+  background-image: linear-gradient(rgba(20, 25, 45, 0.35), rgba(20, 25, 45, 0.35)), url(./mers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 40px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.menu i {
+  font-size: 10px;
+}
+
+.submit-btn {
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 13px;
+}
+
+.car-info {
+  position: absolute;
+  left: 190px;
+  top: 250px;
+}
+
+.car-info .price {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.car-info h1 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.hero-specs {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0 30px;
+  font-size: 12px;
+}
+
+.learn-btn {
+  display: inline-block;
+  padding: 14px 20px;
+  background-color: white;
+  color: #0b0f2a;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  width: 42px;
+  height: 28px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: #0b0f2a;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.hero-prev {
+  left: 42px;
+}
+
+.hero-next {
+  right: 42px;
+}
+
+/* ---------- Umumiy qismlar ---------- */
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+
+.section-head h2,
+.why h2,
+.inspiration h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.view-all {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.dark-btn {
+  display: inline-block;
+  padding: 16px 20px;
+  background-color: #050b20;
+  color: white;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.dark-btn .arrow,
+.outline-btn .arrow {
+  filter: invert(1);
+}
+
+/* ---------- Browse by Type ---------- */
+
+.types {
+  padding: 90px var(--side) 90px;
+}
+
+.type-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 22px;
+}
+
+.type-card {
+  height: 131px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.type-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f9fafc;
+}
+
+.type-icon img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* ---------- Mashina kartalari ---------- */
+
+.vehicles {
+  padding: 80px var(--side) 80px;
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  color: #0b0f2a;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  border-bottom-color: #405ff2;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.car-card {
+  background-color: white;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.car-photo {
+  position: relative;
+  height: 153px;
+  background-size: cover;
+  background-position: center;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: white;
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.badge.green {
+  background-color: #3a9a3f;
+}
+
+.badge.blue {
+  background-color: #405ff2;
+}
+
+.save-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  color: #0b0f2a;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.car-body {
+  padding: 18px 20px;
+}
+
+.car-body h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.car-sub {
+  font-size: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #ececec;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #ececec;
+  font-size: 11px;
+}
+
+.spec-row span {
+  flex: 1;
+  text-align: center;
+}
+
+.spec-row i {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-price {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.details-link {
+  color: #405ff2;
+  font-size: 12px;
+}
+
+/* ---------- Online, in-person ---------- */
+
+.online {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px var(--side);
+}
+
+.online-text {
+  flex: 1;
+}
+
+.online-text h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 300px;
+  margin-bottom: 18px;
+}
+
+.online-text p {
+  max-width: 420px;
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 26px;
+}
+
+.online-photo {
+  flex: 1;
+  width: 50%;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ---------- Why Choose Us ---------- */
+
+.why {
+  padding: 70px var(--side) 0;
+}
+
+.why h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.why-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  margin-bottom: 22px;
+}
+
+.why-item h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.why-item p {
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* ---------- Specials ---------- */
+
+.specials {
+  padding: 90px var(--side) 90px;
+}
+
+/* ---------- Reviews ---------- */
+
+.reviews {
+  padding: 0 var(--side) 90px;
+}
+
+.review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  margin-bottom: 44px;
+}
+
+.review-head h2 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.review-rate {
+  font-size: 12px;
+}
+
+.review-wrap {
+  position: relative;
+}
+
+.review-rail {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.review-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 250px;
+  height: 150px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 22px 20px;
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  background-color: #00b67a;
+  color: white;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star.off {
+  background-color: #dcdce6;
+}
+
+.verified {
+  font-size: 11px;
+  color: #6b6f76;
+}
+
+.review-card h4 {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.review-card p {
+  font-size: 11px;
+  line-height: 1.75;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.review-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.review-btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -14px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+  background-color: white;
+  color: #0b0f2a;
+  font-size: 9px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.review-left {
+  left: -44px;
+}
+
+.review-right {
+  right: -44px;
+}
+
+/* ---------- Our Team ---------- */
+
+.team {
+  padding: 90px var(--side) 90px;
+}
+
+.team-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.team-card img {
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.team-card h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  font-size: 11px;
+}
+
+/* ---------- Need Some Inspiration ---------- */
+
+.inspiration {
+  padding: 0 var(--side) 70px;
+}
+
+.inspiration h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pill {
+  padding: 14px 18px;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/* ---------- App ---------- */
+
+.app {
+  padding: 0 16px 80px;
+}
+
+.app-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-image: linear-gradient(120deg, #e3e7fb, #f0f2fd);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.app-text {
+  align-self: center;
+  max-width: 520px;
+  padding: 60px 0 60px max(24px, calc((100vw - 1065px) / 2));
+}
+
+.app-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.app-text p {
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 26px;
+}
+
+.app-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.app-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 20px;
+  background-color: #050b20;
+  color: white;
+  border-radius: 10px;
+}
+
+.app-btn i {
+  font-size: 18px;
+}
+
+.app-line {
+  width: 1px;
+  height: 22px;
+  background-color: #555b70;
+}
+
+.app-small {
+  font-size: 9px;
+}
+
+.app-big {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.app-phone {
+  height: 340px;
+  margin-right: 140px;
+  display: block;
+}
+
+/* ---------- Premium Brands ---------- */
+
+.brands {
+  padding: 0 var(--side) 80px;
+}
+
+.brand-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 22px;
+}
+
+.brand-card {
+  height: 126px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+}
+
+.brand-card img {
+  height: 40px;
+  max-width: 72px;
+  object-fit: contain;
+}
+
+.brand-card p {
+  font-size: 13px;
+}
+
+/* ---------- Banner ---------- */
+
+.banner {
+  display: flex;
+  align-items: center;
+  min-height: 450px;
+  padding: 0 190px;
+  color: white;
+  background-image: linear-gradient(rgba(10, 15, 35, 0.4), rgba(10, 15, 35, 0.4)), url(./OXRGI.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-text h2 {
+  max-width: 520px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.outline-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+/* ---------- Sign In oynasi ---------- */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 11, 32, 0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-box {
+  position: relative;
+  width: 400px;
+  padding: 40px 32px 32px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.modal-box h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.modal-text {
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#login-form input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  margin-bottom: 12px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.login-btn {
+  width: 100%;
+  height: 46px;
+  background-color: #405ff2;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  position: relative;
+  background-color: white;
+}
+
+.footer-in {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 24px 40px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 46px;
+  border-bottom: 1px solid #ececec;
+}
+
+.footer-about h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer-about p {
+  font-size: 12px;
+}
+
+.footer-join {
+  display: flex;
+  align-items: center;
+  width: 380px;
+  height: 52px;
+  padding: 0 8px 0 20px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+}
+
+.footer-join input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.signup-btn {
+  height: 36px;
+  padding: 0 20px;
+  background-color: #050b20;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 36px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.footer-col a,
+.footer-col p {
+  font-size: 12px;
+}
+
+.footer-last .connect {
+  margin-top: 18px;
+}
+
+.socials {
+  display: flex;
+  gap: 26px;
+}
+
+.socials a {
+  font-size: 11px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ececec;
+}
+
+.footer-bottom-in {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #0b0f2a;
+}
+
+.to-top {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #405ff2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+}
+
+/* ---------- Kichik ekranlar ---------- */
+
+@media (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+
+  .car-info {
+    left: 70px;
+  }
+
+  .car-info h1 {
+    font-size: 40px;
+  }
+
+  .banner {
+    padding: 0 70px;
+  }
+
+  .review-left {
+    left: -20px;
+  }
+
+  .review-right {
+    right: -20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .type-row,
+  .brand-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .car-grid,
+  .why-grid,
+  .team-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .online {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .online-photo {
+    width: 100%;
+  }
+
+  .app-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-text {
+    padding: 50px 24px 30px;
+  }
+
+  .app-phone {
+    margin: 0 auto;
+  }
+
+  .footer-top,
+  .footer-bottom-in {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-cols {
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    flex: 0 0 calc(50% - 12px);
+  }
+
+  .footer-join {
+    width: 100%;
+  }
+}
+
+/* ---------- Telefon ---------- */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 24px;
+  }
+
+  .submit-btn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .car-info {
+    left: 24px;
+    top: 200px;
+  }
+
+  .car-info .price {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .car-info h1 {
+    font-size: 32px;
+  }
+
+  .hero-specs {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-arrow {
+    top: auto;
+    bottom: 30px;
+  }
+
+  .hero-prev {
+    left: auto;
+    right: 90px;
+  }
+
+  .hero-next {
+    right: 24px;
+  }
+
+  .section-head h2,
+  .why h2,
+  .inspiration h2 {
+    font-size: 24px;
+  }
+
+  .types,
+  .specials,
+  .team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .vehicles {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .type-row,
+  .brand-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .tabs {
+    gap: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .car-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .online {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .online-text h2 {
+    font-size: 26px;
+  }
+
+  .online-photo {
+    height: 260px;
+  }
+
+  .why {
+    padding-top: 50px;
+  }
+
+  .review-btn {
+    display: none;
+  }
+
+  .review-head h2 {
+    font-size: 26px;
+  }
+
+  .team-row {
+    gap: 14px;
+  }
+
+  .team-card img {
+    height: 180px;
+  }
+
+  .pill-row {
+    gap: 12px;
+  }
+
+  .app {
+    padding-bottom: 50px;
+  }
+
+  .app-text h2 {
+    font-size: 22px;
+  }
+
+  .app-btns {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .app-phone {
+    height: 260px;
+  }
+
+  .banner {
+    min-height: 340px;
+    padding: 0 24px;
+  }
+
+  .banner-text h2 {
+    font-size: 28px;
+  }
+
+  .modal-box {
+    width: 90%;
+    padding: 36px 20px 24px;
+  }
+
+  .footer-in {
+    padding: 40px 24px 30px;
+  }
+}

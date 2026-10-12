@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CarHut</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" />
     <link rel="stylesheet" href="./oxrgi.css" />
   </head>
   <body>
@@ -35,7 +36,7 @@
         <h1>Ranger Black <br />2021</h1>
       </div>
 
-      <div class="dots"><span></span><span></span><span></span></div>
+      <div class="dots"><span class="active"></span><span></span><span></span></div>
 
       <div class="specs">
         <div class="spec">
@@ -62,14 +63,14 @@
           <p class="small">Year</p>
         </div>
 
-        <a href="#" class="learn-btn">Learn More ↗</a>
+        <a href="#" class="learn-btn">Learn More <img class="arrow" src="" alt="" /></a>
       </div>
     </div>
 
     <section class="vehicles">
       <div class="section-head">
         <h2>Explore All Vehicles</h2>
-        <a href="#" class="view-all">View All →</a>
+        <a href="#" class="view-all">View All <img class="arrow" src="./arrow.svg" alt="" /></a>
       </div>
 
       <div class="tabs">
@@ -81,7 +82,7 @@
       <div class="rail-wrap">
         <div class="rail" id="rail">
           <div class="car-card">
-            <div class="car-photo" style="background-image: url(./salom/1e7a6a561706eacf740bda6fbbff670c191a65bf.jpg)">
+            <div class="car-photo" style="background-image: url(./salom/acaf2e2b326396346b68dcac4025be7e9a24df21.jpg)">
               <button class="save-btn"><i class="fa-regular fa-bookmark"></i></button>
             </div>
             <div class="car-body">
@@ -94,13 +95,13 @@
               </div>
               <div class="car-footer">
                 <span class="car-price">$15,000</span>
-                <a href="#" class="details-link">View Details →</a>
+                <a href="#" class="details-link">View Details <img class="arrow" src="./arrow.svg" alt="" /></a>
               </div>
             </div>
           </div>
 
           <div class="car-card">
-            <div class="car-photo" style="background-image: url(./salom/acaf2e2b326396346b68dcac4025be7e9a24df21.jpg)">
+            <div class="car-photo" style="background-image: url(./salom/ee37027a3df8daa44f995c6898214c471feafc51.jpg)">
               <button class="save-btn"><i class="fa-regular fa-bookmark"></i></button>
             </div>
             <div class="car-body">
@@ -113,13 +114,13 @@
               </div>
               <div class="car-footer">
                 <span class="car-price">$150,000</span>
-                <a href="#" class="details-link">View Details →</a>
+                <a href="#" class="details-link">View Details <img class="arrow" src="./arrow.svg" alt="" /></a>
               </div>
             </div>
           </div>
 
           <div class="car-card">
-            <div class="car-photo" style="background-image: url(./salom/ee37027a3df8daa44f995c6898214c471feafc51.jpg)">
+            <div class="car-photo" style="background-image: url(./salom/1e7a6a561706eacf740bda6fbbff670c191a65bf.jpg)">
               <span class="pbadge">Great Price</span>
               <button class="save-btn"><i class="fa-regular fa-bookmark"></i></button>
             </div>
@@ -133,7 +134,7 @@
               </div>
               <div class="car-footer">
                 <span class="car-price">$210,000</span>
-                <a href="#" class="details-link">View Details →</a>
+                <a href="#" class="details-link">View Details <img class="arrow" src="./arrow.svg" alt="" /></a>
               </div>
             </div>
           </div>
@@ -152,15 +153,15 @@
               </div>
               <div class="car-footer">
                 <span class="car-price">$89,000</span>
-                <a href="#" class="details-link">View Details →</a>
+                <a href="#" class="details-link">View Details <img class="arrow" src="./ alt="" /></a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="rail-nav">
-          <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
-          <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+          <button class="work" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="work" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
     </section>
@@ -170,22 +171,22 @@
         <h2>Why Choose Us?</h2>
         <div class="why-grid">
           <div class="why-item">
-            <i class="fa-solid fa-file-invoice-dollar why-icon"></i>
+            <i class="fa-solid fa-tags"></i>
             <h4>Special Financing Offers</h4>
             <p>Our stress-free finance department that can find financial solutions to save you money.</p>
           </div>
           <div class="why-item">
-            <i class="fa-solid fa-shield-halved why-icon"></i>
+            <i class="fa-solid fa-tags"></i>
             <h4>Trusted Car Dealership</h4>
             <p>Our stress-free finance department that can find financial solutions to save you money.</p>
           </div>
           <div class="why-item">
-            <i class="fa-solid fa-tags why-icon"></i>
+           <i class="fa-solid fa-tags"></i>
             <h4>Transparent Pricing</h4>
             <p>Our stress-free finance department that can find financial solutions to save you money.</p>
           </div>
           <div class="why-item">
-            <i class="fa-solid fa-screwdriver-wrench why-icon"></i>
+           <i class="fa-solid fa-tags"></i>
             <h4>Expert Car Service</h4>
             <p>Our stress-free finance department that can find financial solutions to save you money.</p>
           </div>
@@ -211,24 +212,24 @@
     <section class="types">
       <div class="section-head">
         <h2>Browse by Type</h2>
-        <a href="#" class="view-all">View All ↗</a>
+        <a href="#" class="view-all">View All <img class="arrow" src="./arrow.svg" alt="" /></a>
       </div>
 
       <div class="type-row">
-        <a href="#" class="type-card" style="background-image: url(./2.jpg)"></a>
-        <a href="#" class="type-card" style="background-image: url(./3.jpg)">
+        <a href="#" class="type-card" style="background-image: url(./salom/3.jpg)"></a>
+        <a href="#" class="type-card" style="background-image: url(./salom/2.jpg)">
           <span class="type-label"><i class="fa-solid fa-car-side"></i> Sedan</span>
         </a>
       </div>
 
       <div class="type-row">
-        <a href="#" class="type-card" style="background-image: url(./4.jpg)">
+        <a href="#" class="type-card" style="background-image: url(./salom/5.jpg)">
           <span class="type-label"><i class="fa-solid fa-car"></i> Hatchback</span>
         </a>
-        <a href="#" class="type-card" style="background-image: url(./5.jpg)">
+        <a href="#" class="type-card" style="background-image: url(./salom/6.jpg)">
           <span class="type-label"><i class="fa-solid fa-leaf"></i> Hybrid</span>
         </a>
-        <a href="#" class="type-card" style="background-image: url(./6.jpg)">
+        <a href="#" class="type-card" style="background-image: url(./salom/4.jpg)">
           <span class="type-label"><i class="fa-solid fa-car-rear"></i> Coupe</span>
         </a>
       </div>
@@ -237,7 +238,7 @@
     <section class="shop">
       <div class="section-head">
         <h2>Shop BoxCar Your Way</h2>
-        <a href="#" class="view-all">View More ↗</a>
+        <a href="#" class="view-all">View More <img class="arrow" src="./arrow.svg" alt="" /></a>
       </div>
 
       <div class="shop-tabs">
@@ -294,32 +295,32 @@
     <section class="brands">
       <div class="section-head">
         <h2>Explore Our Premium Brands</h2>
-        <a href="#" class="view-all">Show All Brands ↗</a>
+        <a href="#" class="view-all">Show All Brands <img class="arrow" src="./arrow.svg" alt="" /></a>
       </div>
 
       <div class="brand-row">
         <a href="#" class="brand-card">
-          <img src="./audi.png" alt="Audi" />
+          <img src="./avdiyo.jpg" alt="Audi" />
           <p>Audi</p>
         </a>
         <a href="#" class="brand-card">
-          <img src="./bmw.png" alt="BMW" />
+          <img src="./bmw.jpg" alt="BMW" />
           <p>BMW</p>
         </a>
         <a href="#" class="brand-card">
-          <img src="./ford.png" alt="Ford" />
+          <img src="./bugatdi.jpg" alt="Ford" />
           <p>Ford</p>
         </a>
         <a href="#" class="brand-card">
-          <img src="./mercedes.png" alt="Mercedes Benz" />
+          <img src="./mers.jpg" alt="Mercedes Benz" />
           <p>Mercedes Benz</p>
         </a>
         <a href="#" class="brand-card">
-          <img src="./peugeot.png" alt="Peugeot" />
+          <img src="./men.jpg" alt="Peugeot" />
           <p>Peugeot</p>
         </a>
         <a href="#" class="brand-card">
-          <img src="./volkswagen.png" alt="Volkswagen" />
+          <img src="./buzulgan.jpg" alt="Volkswagen" />
           <p>Volkswagen</p>
         </a>
       </div>
@@ -350,12 +351,10 @@
             </div>
           </div>
 
-          <button class="calc-btn work" id="calc-btn">Calculate <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-
-          <p class="loan-result" id="loan-result"></p>
+          <button class="calc-btn work" id="calc-btn">Calculate <img class="arrow" src="./arrow.svg" alt="" /></button>
         </div>
 
-        <img class="loan-photo" src="./7.jpg" alt="Auto loan" />
+        <img class="loan-photo" src="./oxrgisi.jpg" alt="Auto loan" />
       </div>
     </section>
 
@@ -456,27 +455,27 @@
     <section class="team">
       <div class="section-head">
         <h2>Our Team</h2>
-        <a href="#" class="view-all">View All ↗</a>
+        <a href="#" class="view-all">View All <img class="arrow" src="" alt="" /></a>
       </div>
 
       <div class="team-row">
         <div class="team-card">
-          <img src="./team1.jpg" alt="Courtney Henry" />
+          <img src="./qz2.jpg" alt="Courtney Henry" />
           <h4>Courtney Henry</h4>
           <p>Development Manager</p>
         </div>
         <div class="team-card">
-          <img src="./team2.jpg" alt="Jerome Bell" />
+          <img src="./erkak.jpg" alt="Jerome Bell" />
           <h4>Jerome Bell</h4>
           <p>Software Tester</p>
         </div>
         <div class="team-card">
-          <img src="./team3.jpg" alt="Arlene McCoy" />
+          <img src="./ngr.jpg" alt="Arlene McCoy" />
           <h4>Arlene McCoy</h4>
           <p>Software Developer</p>
         </div>
         <div class="team-card">
-          <img src="./team4.jpg" alt="Jenny Wilson" />
+          <img src="./qiz.jpg" alt="Jenny Wilson" />
           <h4>Jenny Wilson</h4>
           <p>UI/UX Designer</p>
         </div>
@@ -485,7 +484,7 @@
 
     <section class="app">
       <div class="app-box">
-        <img class="app-bg" src="./8.jpg" alt="App" />
+        <img class="app-bg" src="./oxrgi2.jpg" alt="App" />
 
         <div class="app-text">
           <h2>Shop Used Cars, Whether You're On The Lot Or On The Go</h2>
@@ -516,12 +515,12 @@
     <section class="blog">
       <div class="section-head">
         <h2>Latest Blog Posts</h2>
-        <a href="#" class="view-all">View All ↗</a>
+        <a href="#" class="view-all">View All </a>
       </div>
 
       <div class="blog-row">
         <div class="blog-card">
-          <div class="blog-photo" style="background-image: url(./blog1.jpg)">
+          <div class="blog-photo" style="background-image: url(./n1.jpg)">
             <span class="blog-tag">Sound</span>
           </div>
           <p class="blog-meta">Admin <span class="blog-dot"></span> November 22, 2023</p>
@@ -529,7 +528,7 @@
         </div>
 
         <div class="blog-card">
-          <div class="blog-photo" style="background-image: url(./blog2.jpg)">
+          <div class="blog-photo" style="background-image: url(./n2.jpg)">
             <span class="blog-tag">Accessories</span>
           </div>
           <p class="blog-meta">Admin <span class="blog-dot"></span> November 22, 2023</p>
@@ -537,7 +536,7 @@
         </div>
 
         <div class="blog-card">
-          <div class="blog-photo" style="background-image: url(./blog3.jpg)">
+          <div class="blog-photo" style="background-image: url(./n3.jpg)">
             <span class="blog-tag">Exterior</span>
           </div>
           <p class="blog-meta">Admin <span class="blog-dot"></span> November 22, 2023</p>
